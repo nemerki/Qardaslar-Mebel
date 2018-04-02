@@ -552,16 +552,20 @@ body {
   src: url("../../fonts/Roboto-Bold.ttf"); }
 
 @font-face {
-  font-family: Roboto-Regular;
-  src: url("../../fonts/Roboto-Regular.ttf"); }
-
-@font-face {
   font-family: JosefinSans-Bold;
   src: url("../../fonts/JosefinSans-Bold.ttf"); }
 
 @font-face {
+  font-family: JosefinSans-Regular;
+  src: url("../../fonts/JosefinSans-Regular.ttf"); }
+
+@font-face {
   font-family: Roboto-BlackItalic;
   src: url("../../fonts/Roboto-BlackItalic.ttf"); }
+
+@font-face {
+  font-family: Myriad-Pro-Regular;
+  src: url("../../fonts/Myriad Pro Regular.ttf"); }
 
 .page-tittle {
   position: relative;
@@ -658,6 +662,49 @@ body {
     color: #485355;
     background-color: #d4bfa2; }
 
+.comment__tittle {
+  font-family: "Break-Fill-Bold", Helvetica, Arial, sans-serif;
+  font-size: 2.2rem;
+  color: #485355; }
+
+.comment__body {
+  border-left: 1px solid #e5e5e5;
+  padding-left: 3rem; }
+
+.comment__header h5 {
+  font-family: "JosefinSans-Bold", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  color: #485355; }
+
+.comment__date {
+  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  color: #c3ccce;
+  letter-spacing: 2px;
+  display: inline-block; }
+
+.comment__btn {
+  font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  color: #485355;
+  -webkit-border-radius: 5rem;
+     -moz-border-radius: 5rem;
+          border-radius: 5rem;
+  border: 1px solid #e5e5e5;
+  padding: .8rem 3rem;
+  letter-spacing: 1px;
+  float: right; }
+  .comment__btn:hover {
+    color: #fff;
+    background-color: #485355;
+    text-decoration: none; }
+
+.comment__text {
+  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  color: #8e9c9f;
+  margin-bottom: 3rem; }
+
 .comment-add__tittle {
   font-family: "Break-Fill-Bold", Helvetica, Arial, sans-serif;
   font-size: 2.2rem;
@@ -666,16 +713,20 @@ body {
 .comment-add__btn {
   font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
   font-size: 1.3rem;
-  color: #fff;
+  color: #485355;
   letter-spacing: 3px;
   padding: 1.5rem 5rem;
-  background-color: #485355;
+  border: 1px solid #e5e5e5;
   -webkit-border-radius: 10rem;
      -moz-border-radius: 10rem;
           border-radius: 10rem;
   margin: 0 auto;
   margin-top: 6rem;
   margin-bottom: 10rem; }
+  .comment-add__btn:hover {
+    background-color: #485355;
+    color: #fff;
+    text-decoration: none; }
 
 .comment-add input, .comment-add textarea {
   font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
@@ -983,7 +1034,133 @@ body {
 
 .blog-detail__img {
   width: 100%;
-  max-height: 70rem; }
+  max-height: 70rem;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.blog-detail__header {
+  font-family: "Break-Fill-Bold", Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  color: #485355;
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 2rem; }
+
+.blog-detail__author {
+  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  color: #8e9c9f;
+  text-align: center;
+  margin-bottom: 3rem; }
+
+.blog-detail__text {
+  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  color: #8e9c9f; }
+
+.blog-detail__subtittle {
+  font-family: "Break-Fill-Bold", Helvetica, Arial, sans-serif;
+  font-size: 2.2rem;
+  color: #485355; }
+
+.blog-detail__text-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  @media (max-width: 767px) {
+    .blog-detail__text-bottom {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+         -moz-box-orient: vertical;
+         -moz-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+@media (max-width: 767px) {
+  .blog-detail__btn-container {
+    margin-bottom: 3rem;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+       -moz-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; } }
+
+@media (max-width: 575px) {
+  .blog-detail__btn-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.blog-detail__btn {
+  font-family: "Break-Fill-Bold", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  color: #8e9c9f;
+  padding: .8rem 3rem;
+  letter-spacing: 1px;
+  margin-left: 1rem;
+  border: 1px solid #e5e5e5; }
+  @media (max-width: 575px) {
+    .blog-detail__btn {
+      margin-bottom: 1rem;
+      text-align: center; } }
+  .blog-detail__btn:hover {
+    background-color: #485355;
+    color: #fff;
+    text-decoration: none; }
+
+@media (max-width: 767px) {
+  .blog-detail__social {
+    margin-bottom: 3rem;
+    text-align: center; } }
+
+.blog-detail__social-item {
+  margin-left: 3rem; }
+  .blog-detail__social-item .fa {
+    font-size: 1.6rem;
+    color: #8e9c9f; }
+    .blog-detail__social-item .fa:hover {
+      color: #485355; }
+
+.blog-detail .blog__comment {
+  text-align: center;
+  padding-bottom: 6rem; }
+
+.saying {
+  border: 1px solid #e5e5e5;
+  padding: 3rem 7rem  2rem 3rem;
+  margin: 4rem 0; }
+  .saying__text {
+    font-family: "Myriad-Pro-Regular", Helvetica, Arial, sans-serif;
+    font-size: 1.8rem;
+    color: #8e9c9f; }
+  .saying__line {
+    width: 3.1rem;
+    height: 2px;
+    background-color: #d4bfa2; }
+  .saying__author {
+    font-family: "Break-Fill-Bold", Helvetica, Arial, sans-serif;
+    font-size: 1.8rem;
+    color: #485355;
+    margin-top: 1rem; }
 
 .not-found {
   margin-bottom: 10rem; }

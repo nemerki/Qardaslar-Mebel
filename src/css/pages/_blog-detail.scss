@@ -7,37 +7,116 @@
 	&__img {
 		width: 100%;
 		max-height: 70rem;
+		object-fit: cover;
 	}
 
 	&__header {
-		
+		@include font($bfb, 3rem, $color-dark);
+		text-align: center;
+		margin-top: 6rem;
+		margin-bottom: 2rem;
 	}
 
 	&__author {
-		
+		@include font($lr, 1.4rem, $color-dark-light);
+		text-align: center;
+		margin-bottom: 3rem;
+
 	}
 
 	&__text {
-		
+		@include font($lr, 1.6rem, $color-dark-light);
 	}
 
 	&__subtittle {
-		
+		@include font($bfb, 2.2rem, $color-dark);
 	}
 
 	&__text-bottom {
-		
+		display: flex;
+		justify-content: space-between;
+
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+
+		@include respondmax(md){
+			flex-direction: column;
+		}
 	}
 
 	&__btn-container {
-		
+		@include respondmax(md){
+			margin-bottom: 3rem;
+			order: 2;
+		}
+
+		@include respondmax(sm){
+			flex-direction: column;
+			display: flex;
+		}
 	}
 
 	&__btn {
+		@include font($bfb, 1.8rem, $color-dark-light);
+		padding: .8rem 3rem;
+		letter-spacing: 1px;
+		margin-left: 1rem;
+		border: 1px solid $color-border;
+
+		@include respondmax(sm){
+			margin-bottom: 1rem;
+			text-align: center;
+		}
 		
+
+		&:hover {
+			background-color: $color-dark;
+			color: $color-white;
+			text-decoration: none;
+		}
 	}
 
 	&__social {
-		
+		@include respondmax(md){
+			margin-bottom: 3rem;
+			text-align: center;
+		}
+	}
+
+	&__social-item {
+		margin-left: 3rem;
+
+		.fa{
+			@include font($s:1.6rem,$c:$color-dark-light);
+
+			&:hover{
+				color: $color-dark;
+			}
+		}
+	}
+
+	.blog__comment{
+		text-align: center;
+		padding-bottom: 6rem
+	}
+}
+
+.saying{
+	border: 1px solid $color-border;
+	padding: 3rem 7rem  2rem 3rem;
+	margin: 4rem 0;
+	&__text{
+		@include font($mpr, 1.8rem, $color-dark-light);
+	}
+
+	&__line{
+		width: 3.1rem;
+		height: 2px;
+		background-color: $color-primary;
+	}
+
+	&__author{
+		@include font($bfb, 1.8rem,$color-dark);
+		margin-top: 1rem;
 	}
 }
