@@ -1,0 +1,94 @@
+.blog{
+
+	&__left{
+		border: 1px solid #ecedee; 
+		border-left: none;
+
+		@include respondmax(md){
+			border: none;
+
+		}
+	}
+
+	&__right{
+		border: 1px solid #ecedee; 
+		border-right: none;
+
+		@include respondmax(md){
+			border: none;
+			
+		}
+
+	}
+
+	&__text{
+		@include font($bfb,3rem,$color-dark);
+		max-width: 37rem;
+		margin: 0 auto;
+		padding-top: 12rem;
+		padding-bottom: 9rem;
+	}
+
+	&__img{
+		height: 100%;
+		width: 100%;
+
+		object-fit: fill;
+		max-height: 40rem;
+	}
+
+	&__comment{
+		margin-bottom: 10rem;
+		max-width: 37rem;
+		margin: 0 auto;
+		padding-bottom: 10rem;
+		a {
+			margin-right: 2rem;
+
+			&:hover{
+				text-decoration: none;
+			}
+		}
+
+		.fa{
+			@include font($s:1.3rem,$c:$color-primary);
+			margin-right: .6rem;
+		}
+	}
+
+	&__comment-count{
+		@include font($lb, 1.2rem,$color-primary);
+
+	}
+
+	.pagination{
+		justify-content: center;
+		margin-top: 6rem;
+		margin-bottom: 10rem;
+	}
+
+	.page-link{
+		@include font($lsb,1.4rem,$color-dark);
+		width: 4rem;
+		height: 4rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 1rem;
+		border-color: #e5e5e5;
+
+		&:hover{
+			background-color: $color-primary;
+			color: $color-white;
+		}
+
+		&:focus{
+			box-shadow: none;
+		}
+	}
+
+	.page-item.active .page-link{
+		background-color: $color-primary;
+		border-color: #e5e5e5;
+	}
+}

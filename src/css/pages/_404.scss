@@ -1,0 +1,33 @@
+.not-found {
+
+	margin-bottom: 10rem;
+
+	&__tittle{
+		margin-top: 7rem;
+		@include font($jsb,3rem,#22272b);
+		margin-bottom: 2.5rem;
+		span{
+			color: $color-primary;
+		}
+	}
+
+	&__text{
+		@include font($rr,1.6rem, #6f787f);
+		max-width: 52rem;
+	}
+
+	&__btn{
+		@include font($rb,1.3rem,$color-white);
+		background-color: $color-dark;
+		border-radius: 5rem;
+		padding: 1rem 3rem;
+		letter-spacing: 3px;
+		margin-top: 4.5rem;
+
+		&:hover{
+			background-color: $color-primary;
+			color: $color-white;
+		}
+	}
+
+}

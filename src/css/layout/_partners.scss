@@ -1,0 +1,11 @@
+.partners{
+	display: flex;
+	align-items: center;
+	height: 19rem;
+	background-color: $color-silver-light;
+
+	&__img{
+		max-height: 9rem;
+		object-fit: contain;
+	}
+}

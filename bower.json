@@ -1,0 +1,21 @@
+{
+  "name": "start",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Mehemmed Memmedli"
+  ],
+  "license": "ISC",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "asset/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "owl.carousel": "^2.3.3"
+  }
+}

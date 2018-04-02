@@ -1,0 +1,66 @@
+.order-completed {
+	margin-bottom: 10rem;
+
+	&__content {
+		display: flex;
+		background-image: url('../../img/order-completed.png');
+		background-size: 100% 100%;
+		justify-content: space-around;
+		margin-bottom: 5.5rem;
+	}
+
+	&__item{
+
+		@include font($bfb,1.8rem,$color-dark-light);
+		display: flex;
+		align-items:center;
+		margin: 0;
+		padding-bottom: 2rem;
+		padding-top: 2rem;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+
+		&--3{
+			color: $color-white;
+
+			span{
+				@include respondmax(sm){
+					display: none;
+				}
+			}
+		}
+
+		@include respondmax(xl){
+			font-size: 1.5rem;
+			letter-spacing: 2px;
+		}
+
+		@include respondmax(lg){
+			font-size: 1.4rem;
+			letter-spacing: 1px;
+		}
+
+		@include respondmax(md){
+			font-size: 1.1rem;
+			padding-bottom: 1.5rem;
+			padding-top: 1.5rem;
+			letter-spacing: 1px;
+		}
+
+		@include respondmax(sm){
+			font-size: 1rem;
+			padding-bottom: 1rem;
+			padding-top: 1rem;
+			letter-spacing: 1px;
+		}
+
+	}
+
+	&__text{
+		@include font($lr,2.4rem,#6f787f);
+
+		span{
+			color: $color-primary;
+		}
+	}
+}

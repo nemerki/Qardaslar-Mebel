@@ -1,0 +1,51 @@
+.page-tittle{
+	position: relative;
+	background-image: linear-gradient(to right,$color-silver 50%, $color-dark-light 50%);
+	margin-bottom: 9.5rem;
+
+	&__tittle{
+		@include font($bfb, 3.6rem, $color-dark);
+		padding-top: 16rem;
+		margin: 0;
+
+	}
+
+	&__breadcrumb{
+		background-color: transparent;
+		padding-bottom: 16rem;
+		z-index: 55;
+		position: relative;
+
+		.breadcrumb-item, .breadcrumb-item a{
+			@include font($lb,1.4rem, $color-dark-light);		
+		}
+
+		.breadcrumb-item a{
+			&:hover{
+				color: $color-primary;
+			}
+
+		}
+
+
+		.breadcrumb-item+.breadcrumb-item::before{
+			content:"~"
+		}
+	}
+
+	&__border{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 60%;
+		height: 50%;
+		border: 10px solid $color-white;
+		border-left: none;
+
+		@include respondmax(sm){
+			width: 85%;
+		}
+
+		 
+	}
+}

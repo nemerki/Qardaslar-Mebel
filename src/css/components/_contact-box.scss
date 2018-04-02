@@ -1,0 +1,55 @@
+.contact-box{
+
+	&__tittle{
+		@include font($jsb,2.4rem,$color-dark);
+		text-transform: uppercase;
+		margin-bottom: 1.5rem;
+	}
+
+	&__text{
+		@include font($lr,1.6rem, $color-dark-light);
+	}
+	
+
+	input, textarea{
+		@include font($lr,1.4rem, $color-dark-light);		
+		border: none;
+		border-bottom: 1px solid $color-light;			
+		margin-top: 3rem;
+
+
+		&:focus{
+			box-shadow: none;
+			border-bottom: 1px solid $color-primary;	
+
+		}  
+
+	}
+
+	&__btn{
+		@include font($rb,1.3rem,$color-white);
+		background-color: $color-dark;
+		border-radius: 5rem;
+		text-transform: uppercase;
+		padding:1rem 2rem;
+		letter-spacing: 2px;
+		margin-top: 6rem;
+
+		@include respondmax(md){
+			margin-top: 3rem;
+			margin-bottom: 3rem;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		
+
+		&:hover{
+			color: $color-dark;
+			background-color: $color-primary;
+		}
+
+	}
+
+
+}
