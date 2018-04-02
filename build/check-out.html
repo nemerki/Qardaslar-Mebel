@@ -53,11 +53,9 @@
 	<div class="container">
 		<div class="check-out__content">
 			<div class="row">
-				<div class="col-md-9">
+				<div class="col-md-8">
+					<h3 class="check-out__tittle">BILLING ADDRESS</h3>
 					<div class="check-out__billing">
-						<h3 class="check-out__tittle">BILLING ADDRESS</h3>
-
-
 						<form>
 
 							<div class="form-group row">
@@ -137,13 +135,15 @@
 								</div>
 							</div>
 
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="gridCheck1">
-								<label class="form-check-label" for="gridCheck1">
+							<div class="form-check d-flex align-items-center mt-5 mb-3">
+								<input class="form-check-input " type="checkbox" id="gridCheck1">
+								<label class="form-check-label check-out__checkbox-text ml-5 " for="gridCheck1">
 									Example checkbox
 								</label>
-								<p>Create an account by entering the information below. If you are a returning customer please login at the top of the page</p>
+								
 							</div>
+
+							<p class="check-out__checkbox-text">Create an account by entering the information below. If you are a returning customer please login at the top of the page</p>
 
 							<div class="form-group row">
 								<label for="inputPassword" class="col-sm-3 col-form-label">ACCOUNT PASSWORD *</label>
@@ -152,15 +152,16 @@
 								</div>
 							</div>
 
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="gridCheck1">
-								<label class="form-check-label" for="gridCheck1">
+							<div class="form-check d-flex align-items-center mt-5 mb-3">
+								<input class="form-check-input " type="checkbox" id="gridCheck1">
+								<label class="form-check-label check-out__checkbox-text ml-5 " for="gridCheck1">
 									Example checkbox
 								</label>
+								
 							</div>
 
 							<div class="form-group row">
-								<label for="textarea" class="col-12 col-form-label">ACCOUNT PASSWORD *</label>
+								<label for="textarea" class="col-12 col-form-label">ORDER NOTES</label>
 								<div class="col-12">
 									<textarea class="form-control" id="textarea" rows="2"></textarea>
 									
@@ -173,10 +174,81 @@
 				</div>
 
 
-				<div class="col-md-3">
-					<div class="check-out__promotion"></div>
+				<div class="col-md-4">
+					<h3 class="check-out__tittle">PROMOTIONAL CODE</h3>
+					<div class="check-out__promotion">
+						<p class="check-out__promotion-text">Enter your coupon code if you have one</p>
+						<div class="row">
+							<div class="col-lg-6 col-md-12 col-6">
+								<input type="text" class="form-control" id="inputPhone" placeholder="Coupon code">
+							</div>
+							<div class="col-lg-6 col-md-12 col-6 mt-auto">
+								<a href="" class="btn check-out__promotion-btn">subscribe</a>
+							</div>
+						</div>
+					</div>
+					<h3 class="check-out__tittle">YOUR ORDER</h3>
+					<div class="check-out__order">
+						
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col">PRODUCT</th>
+									<th scope="col">TOTAL</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Office Chair x <span class="check-out__order-count">1</span></td>
+									<td>£150.00</td>
+								</tr>
+								<tr>
+									<td>Office Chair x <span class="check-out__order-count">1</span></td>
+									<td>£150.00</td>
+								</tr>
+								<tr>
+									<td>Cart Subtotal </td>
+									<td>£150.00</td>
+								</tr>
 
-					<div class="check-out__order"></div>
+								<tr>
+									<td>Shipping and Handling </td>
+									<td>Free Shipping</td>
+								</tr>
+
+								<tr>
+									<td>Order Total</td>
+									<td>£150.00</td>
+								</tr>
+
+							</tbody>
+						</table>
+
+						<div class="form-check d-flex align-items-center ">
+							<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+							<label class="form-check-label" for="gridRadios1">
+								Create an account?
+							</label>
+						</div>
+
+						<p class="check-out__order-text">Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+						<div class="form-check d-flex align-items-center">
+							<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" >
+							<label class="form-check-label" for="gridRadios1">
+								Cheque Payment
+							</label>
+						</div>
+
+						<div class="form-check d-flex align-items-center">
+							<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" >
+							<label class="form-check-label" for="gridRadios1">
+								PayPal
+							</label>
+						</div>
+
+						<a href="#" class="btn check-out__order-btn" title="">PLACE PORDER</a>
+					</div>
 
 					
 				</div>
@@ -189,7 +261,7 @@
 
 </section>
 
- 
+
 
 
 

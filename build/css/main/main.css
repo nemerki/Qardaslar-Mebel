@@ -540,6 +540,10 @@ body {
   src: url("../../fonts/Lato-Regular.ttf"); }
 
 @font-face {
+  font-family: Lato-Light;
+  src: url("../../fonts/Lato-Light.ttf"); }
+
+@font-face {
   font-family: Lato-Semibold;
   src: url("../../fonts/Lato-Semibold.ttf"); }
 
@@ -554,6 +558,10 @@ body {
 @font-face {
   font-family: JosefinSans-Bold;
   src: url("../../fonts/JosefinSans-Bold.ttf"); }
+
+@font-face {
+  font-family: JosefinSans-SemiBold;
+  src: url("../../fonts/JosefinSans-SemiBold.ttf"); }
 
 @font-face {
   font-family: JosefinSans-Regular;
@@ -1268,6 +1276,29 @@ body {
   .order-completed .order-steps__item--3 {
     color: #fff; }
 
+.check-out__billing {
+  border: 1px solid #e5e5e5;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 4rem; }
+
+.check-out__tittle {
+  width: 100%;
+  text-align: center;
+  font-family: "JosefinSans-Bold", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #8e9c9f;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  margin-bottom: 0;
+  letter-spacing: 2px; }
+
+.check-out__checkbox-text {
+  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  color: #8e9c9f; }
+
 .check-out .order-steps__content {
   background-image: url("../../img/checkout.png"); }
 
@@ -1287,11 +1318,92 @@ body {
             box-shadow: none;
     border-bottom: 1px solid #d4bfa2; }
 
+.check-out ::-webkit-input-placeholder {
+  color: #c3ccce; }
+
+.check-out :-moz-placeholder {
+  color: #c3ccce; }
+
+.check-out ::-moz-placeholder {
+  color: #c3ccce; }
+
+.check-out :-ms-input-placeholder {
+  color: #c3ccce; }
+
+.check-out ::placeholder {
+  color: #c3ccce; }
+
 .check-out .col-form-label {
   font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   color: #8e9c9f;
   margin-top: auto; }
+
+.check-out .form-check-input {
+  margin-top: 0; }
+
+.check-out__promotion {
+  border: 1px solid #e5e5e5;
+  padding: 2.5rem 2rem; }
+  .check-out__promotion input {
+    margin-bottom: 1rem; }
+
+.check-out__promotion-text {
+  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  color: #8e9c9f;
+  text-align: center; }
+
+.check-out__promotion-btn {
+  font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  color: #485355;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5rem;
+     -moz-border-radius: 5rem;
+          border-radius: 5rem;
+  padding: 1rem 2.5rem;
+  letter-spacing: 1px;
+  margin-top: auto; }
+
+.check-out__order {
+  border: 1px solid #e5e5e5;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+  .check-out__order-text {
+    font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    color: #8e9c9f;
+    border: 1px solid #e5e5e5;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+  .check-out__order-btn {
+    font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
+    font-size: 1.3rem;
+    color: #485355;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 5rem;
+       -moz-border-radius: 5rem;
+            border-radius: 5rem;
+    padding: 1rem 3.5rem;
+    letter-spacing: 1px; }
+    .check-out__order-btn:hover {
+      background-color: #485355;
+      color: #fff; }
+  .check-out__order th {
+    font-family: "Lato-Semibold", Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    color: #8e9c9f; }
+  .check-out__order td {
+    font-family: "JosefinSans-SemiBold", Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    color: #8e9c9f; }
+  .check-out__order .form-check-label {
+    font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    color: #8e9c9f;
+    margin-left: 2rem; }
 
 /* ==========================================================================
    Helper classes
