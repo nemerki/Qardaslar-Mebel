@@ -1,0 +1,31 @@
+.check-out{
+
+	.order-steps__content {		
+		background-image: url('../../img/checkout.png');		
+	}
+
+	.order-steps__item--2{
+		color: $color-white;
+	}
+
+
+	input, textarea, select{
+		@include font($lr,1.4rem, $color-dark-light);		
+		border: none;
+		border-bottom: 1px solid $color-light;			
+		margin-top: 3rem;
+
+
+		&:focus{
+			box-shadow: none;
+			border-bottom: 1px solid $color-primary;	
+
+		}  
+
+	}
+	
+	.col-form-label{
+		@include font($lr, 1.4rem, $color-dark-light);
+		margin-top: auto;
+	}
+}
