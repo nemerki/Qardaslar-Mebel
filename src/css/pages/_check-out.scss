@@ -1,17 +1,13 @@
-//nav layoutdaki navigation dan geliyor
-//page-tittle componentlerden geliyor
-//order-steps componentlerden geliyor
-//footer layoutdaki footer dan geliyor
+//navigation --> layout --> navigation
+//page-tittle --> components --> page-tittle
+//order-steps --> components --> order-steps
+//footer --> layout --> footer
 
 .check-out{
 
-	&__billing{
-		border: 1px solid $color-border;
-		padding-left: 3rem;
-		padding-right: 3rem;
-		padding-bottom: 4rem;
-	}
-
+	&__content{
+		margin-bottom: 8rem;
+	}	
 	&__tittle{
 		width: 100%;
 		//width: calc(100% + #{6rem});
@@ -30,13 +26,113 @@
 		@include font($lr, 1.4rem, $color-dark-light)
 	}
 
+	&__billing{
+		border: 1px solid $color-border;
+		padding-left: 3rem;
+		padding-right: 3rem;
+		padding-bottom: 4rem;
+	}
+
+
+	&__promotion{
+		border: 1px solid $color-border;
+		padding: 2.5rem 2rem;
+		margin-bottom: 3rem;
+
+		input{
+			margin-bottom: 1rem;
+		}
+	}
+	&__promotion-text{
+		@include font($lr, 1.4rem, $color-dark-light);
+		text-align: center;
+	}
+	&__promotion-btn{
+		@include font($rb, 1.3rem, $color-dark);
+		border: 1px solid $color-border;
+		border-radius: 5rem;
+		padding: 1rem 2.5rem;
+		letter-spacing: 1px;
+		margin-top: auto;
+	}
+
+	&__order {
+
+		border: 1px solid $color-border;
+		padding-left: 2rem;
+		padding-right: 2rem;
+
+		
+		@include respondmin(lg) {
+			height: 74%
+		}
+		
+
+		&-text{
+			@include font($lr, 1.4rem,  $color-dark-light);
+			border: 1px solid $color-border;
+			padding: 2rem;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+
+		&-btn{
+			@include font($rb, 1.3rem, $color-dark);
+			border: 1px solid $color-border;
+			border-radius: 5rem;
+			margin-top: 7rem;
+			padding: 1rem 3.5rem;
+			letter-spacing: 1px;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 7rem;
+			&:hover{
+				background-color: $color-dark;	
+				color: $color-white
+			}
+		}
+
+		&-total{
+			@include font($ll, 1.8rem, $color-dark-light);
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		&-product{
+			@include font($jssb, 1.6rem, $color-dark-light);
+		}
+
+		th{
+			@include font($lsb, 1.4rem, $color-dark-light);
+			padding-top: 2rem;
+		}
+
+		td {
+			padding-top: 2rem;
+		}
+
+
+		.form-check-label{
+			@include font($lr, 1.4rem,  $color-dark-light);
+			margin-left: 2rem;
+		}
+
+
+	}
+
+
+	.order-steps {
+		margin-bottom: 6rem;
+	}
 	.order-steps__content {		
-		background-image: url('../../img/checkout.png');		
+		background-image: url('../../img/checkout.png');
+		margin-bottom: 2.5rem;		
 	}
 
 	.order-steps__item--2{
 		color: $color-white;
 	}
+
 
 
 	input, textarea, select{
@@ -68,65 +164,4 @@
 		margin-top: 0;
 	}
 
-	&__promotion{
-		border: 1px solid $color-border;
-		padding: 2.5rem 2rem;
-
-		input{
-			margin-bottom: 1rem;
-		}
-	}
-	&__promotion-text{
-		@include font($lr, 1.4rem, $color-dark-light);
-		text-align: center;
-	}
-	&__promotion-btn{
-		@include font($rb, 1.3rem, $color-dark);
-		border: 1px solid $color-border;
-		border-radius: 5rem;
-		padding: 1rem 2.5rem;
-		letter-spacing: 1px;
-		margin-top: auto;
-	}
-
-	&__order {
-
-		border: 1px solid $color-border;
-		padding-left: 2rem;
-		padding-right: 2rem;
-
-		&-text{
-			@include font($lr, 1.4rem,  $color-dark-light);
-			border: 1px solid $color-border;
-			padding: 2rem;
-			margin-top: 2rem;
-			margin-bottom: 2rem;
-		}
-
-		&-btn{
-			@include font($rb, 1.3rem, $color-dark);
-			border: 1px solid $color-border;
-			border-radius: 5rem;
-			
-			padding: 1rem 3.5rem;
-			letter-spacing: 1px;
-			&:hover{
-				background-color: $color-dark;	
-				color: $color-white
-			}
-		}
-
-		th{
-			@include font($lsb, 1.4rem, $color-dark-light);
-		}
-
-		td{
-			@include font($jssb, 1.6rem, $color-dark-light);
-		}
-
-		.form-check-label{
-			@include font($lr, 1.4rem,  $color-dark-light);
-			margin-left: 2rem;
-		}
-	}
 }
