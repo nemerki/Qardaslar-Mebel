@@ -2,15 +2,14 @@
 //page-tittle --> components --> page-tittle
 //footer --> layout --> footer
 
-.order-completed {
-	margin-bottom: 10rem;
+.shopping-cart {
 
 	.order-steps__content {		
-		background-image: url('../../img/order-completed.png');		
-	}
-
-	.order-steps__item--3{
-		color: $color-white;
+		background-image: url('../../img/shopping-cart.png');		
 	}
 	
+	.order-steps__item--1{
+		color: $color-white;
+	}
+
 }

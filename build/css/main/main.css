@@ -584,7 +584,7 @@ body {
   background-image: linear-gradient(to right, #f5f8fa 50%, #8e9c9f 50%);
   margin-bottom: 9.5rem; }
   .page-tittle__tittle {
-    font-family: "Break-Fill-Bold", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 3.6rem;
     color: #485355;
     padding-top: 16rem;
@@ -595,7 +595,7 @@ body {
     z-index: 55;
     position: relative; }
     .page-tittle__breadcrumb .breadcrumb-item, .page-tittle__breadcrumb .breadcrumb-item a {
-      font-family: "Lato-Bold", Helvetica, Arial, sans-serif;
+      font-family: '$ff', Helvetica, Arial, sans-serif;
       font-size: 1.4rem;
       color: #8e9c9f; }
     .page-tittle__breadcrumb .breadcrumb-item a:hover {
@@ -619,19 +619,19 @@ body {
         width: 85%; } }
 
 .contact-box__tittle {
-  font-family: "JosefinSans-Bold", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 2.4rem;
   color: #485355;
   text-transform: uppercase;
   margin-bottom: 1.5rem; }
 
 .contact-box__text {
-  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   color: #8e9c9f; }
 
 .contact-box input, .contact-box textarea {
-  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   color: #8e9c9f;
   border: none;
@@ -644,7 +644,7 @@ body {
     border-bottom: 1px solid #d4bfa2; }
 
 .contact-box__btn {
-  font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 1.3rem;
   color: #fff;
   background-color: #485355;
@@ -671,7 +671,7 @@ body {
     background-color: #d4bfa2; }
 
 .comment__tittle {
-  font-family: "Break-Fill-Bold", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 2.2rem;
   color: #485355; }
 
@@ -680,19 +680,19 @@ body {
   padding-left: 3rem; }
 
 .comment__header h5 {
-  font-family: "JosefinSans-Bold", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 2rem;
   color: #485355; }
 
 .comment__date {
-  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
   color: #c3ccce;
   letter-spacing: 2px;
   display: inline-block; }
 
 .comment__btn {
-  font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 1.3rem;
   color: #485355;
   -webkit-border-radius: 5rem;
@@ -708,18 +708,18 @@ body {
     text-decoration: none; }
 
 .comment__text {
-  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   color: #8e9c9f;
   margin-bottom: 3rem; }
 
 .comment-add__tittle {
-  font-family: "Break-Fill-Bold", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 2.2rem;
   color: #485355; }
 
 .comment-add__btn {
-  font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 1.3rem;
   color: #485355;
   letter-spacing: 3px;
@@ -737,7 +737,7 @@ body {
     text-decoration: none; }
 
 .comment-add input, .comment-add textarea {
-  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   color: #8e9c9f;
   border: none;
@@ -771,7 +771,7 @@ body {
       color: #8e9c9f;
       text-decoration: none; }
   .order-steps__item {
-    font-family: "Break-Fill-Bold", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
     color: #8e9c9f;
     display: -webkit-box;
@@ -813,7 +813,7 @@ body {
         padding-top: 1rem;
         letter-spacing: 1px; } }
   .order-steps__text {
-    font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 2.4rem;
     color: #6f787f; }
     .order-steps__text span {
@@ -822,11 +822,11 @@ body {
 .footer {
   text-align: center; }
   .footer__tittle {
-    font-family: "Break-Fill-Regular", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 3rem;
     color: #485355; }
   .footer__text {
-    font-family: "Break-Fill-Regular", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
     color: #8e9c9f;
     max-width: 50rem;
@@ -840,7 +840,7 @@ body {
 
 .footer-nav {
   background-color: #f4f8fb;
-  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   color: #8e9c9f; }
   .footer-nav__list {
@@ -850,7 +850,7 @@ body {
         text-align: left; } }
   .footer-nav__item {
     margin-bottom: 1rem;
-    font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 1.4rem;
     color: #8e9c9f;
     padding: 0 2%; }
@@ -863,7 +863,7 @@ body {
 .contact-info {
   margin-top: 10rem; }
   .contact-info__btn {
-    font-family: "Break-Fill-Bold", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
     color: #485355;
     margin-bottom: 3rem;
@@ -899,14 +899,14 @@ body {
     -o-object-fit: cover;
        object-fit: cover; }
   .header-carousel__tittle {
-    font-family: "Lato-Semibold", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 6rem;
     color: #fff;
     margin: 0; }
     .header-carousel__tittle span {
       color: #d4bfa2; }
   .header-carousel__subtittle {
-    font-family: "Lato-Bold", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 1.6rem;
     color: #fff;
     text-transform: uppercase;
@@ -914,7 +914,7 @@ body {
     margin-bottom: 3rem;
     margin-top: 2rem; }
   .header-carousel__btn {
-    font-family: "Roboto-Regular", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 1.3rem;
     color: #d4bfa2;
     letter-spacing: 2px;
@@ -1031,7 +1031,7 @@ body {
       border: none; } }
 
 .blog__text {
-  font-family: "Break-Fill-Bold", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 3rem;
   color: #485355;
   max-width: 37rem;
@@ -1061,7 +1061,7 @@ body {
     margin-right: .6rem; }
 
 .blog__comment-count {
-  font-family: "Lato-Bold", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
   color: #d4bfa2; }
 
@@ -1075,7 +1075,7 @@ body {
   margin-bottom: 10rem; }
 
 .blog .page-link {
-  font-family: "Lato-Semibold", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   color: #485355;
   width: 4rem;
@@ -1116,7 +1116,7 @@ body {
      object-fit: cover; }
 
 .blog-detail__header {
-  font-family: "Break-Fill-Bold", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 3rem;
   color: #485355;
   text-align: center;
@@ -1124,19 +1124,19 @@ body {
   margin-bottom: 2rem; }
 
 .blog-detail__author {
-  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   color: #8e9c9f;
   text-align: center;
   margin-bottom: 3rem; }
 
 .blog-detail__text {
-  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   color: #8e9c9f; }
 
 .blog-detail__subtittle {
-  font-family: "Break-Fill-Bold", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 2.2rem;
   color: #485355; }
 
@@ -1188,7 +1188,7 @@ body {
     display: flex; } }
 
 .blog-detail__btn {
-  font-family: "Break-Fill-Bold", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 1.8rem;
   color: #8e9c9f;
   padding: .8rem 3rem;
@@ -1226,7 +1226,7 @@ body {
   padding: 3rem 7rem  2rem 3rem;
   margin: 4rem 0; }
   .saying__text {
-    font-family: "Myriad-Pro-Regular", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
     color: #8e9c9f; }
   .saying__line {
@@ -1234,7 +1234,7 @@ body {
     height: 2px;
     background-color: #d4bfa2; }
   .saying__author {
-    font-family: "Break-Fill-Bold", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
     color: #485355;
     margin-top: 1rem; }
@@ -1243,19 +1243,19 @@ body {
   margin-bottom: 10rem; }
   .not-found__tittle {
     margin-top: 7rem;
-    font-family: "JosefinSans-Bold", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 3rem;
     color: #22272b;
     margin-bottom: 2.5rem; }
     .not-found__tittle span {
       color: #d4bfa2; }
   .not-found__text {
-    font-family: "Roboto-Regular", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 1.6rem;
     color: #6f787f;
     max-width: 52rem; }
   .not-found__btn {
-    font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 1.3rem;
     color: #fff;
     background-color: #485355;
@@ -1282,7 +1282,7 @@ body {
 .check-out__tittle {
   width: 100%;
   text-align: center;
-  font-family: "JosefinSans-Bold", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   color: #fff;
   background-color: #8e9c9f;
@@ -1292,7 +1292,7 @@ body {
   letter-spacing: 2px; }
 
 .check-out__checkbox-text {
-  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   color: #8e9c9f; }
 
@@ -1310,13 +1310,13 @@ body {
     margin-bottom: 1rem; }
 
 .check-out__promotion-text {
-  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   color: #8e9c9f;
   text-align: center; }
 
 .check-out__promotion-btn {
-  font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 1.3rem;
   color: #485355;
   border: 1px solid #e5e5e5;
@@ -1335,7 +1335,7 @@ body {
     .check-out__order {
       height: 74%; } }
   .check-out__order-text {
-    font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 1.4rem;
     color: #8e9c9f;
     border: 1px solid #e5e5e5;
@@ -1343,7 +1343,7 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem; }
   .check-out__order-btn {
-    font-family: "Roboto-Bold", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 1.3rem;
     color: #485355;
     border: 1px solid #e5e5e5;
@@ -1368,7 +1368,7 @@ body {
       background-color: #485355;
       color: #fff; }
   .check-out__order-total {
-    font-family: "Lato-Light", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
     color: #8e9c9f;
     display: -webkit-box;
@@ -1382,18 +1382,18 @@ body {
         -ms-flex-pack: end;
             justify-content: flex-end; }
   .check-out__order-product {
-    font-family: "JosefinSans-SemiBold", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 1.6rem;
     color: #8e9c9f; }
   .check-out__order th {
-    font-family: "Lato-Semibold", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 1.4rem;
     color: #8e9c9f;
     padding-top: 2rem; }
   .check-out__order td {
     padding-top: 2rem; }
   .check-out__order .form-check-label {
-    font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+    font-family: '$ff', Helvetica, Arial, sans-serif;
     font-size: 1.4rem;
     color: #8e9c9f;
     margin-left: 2rem; }
@@ -1409,7 +1409,7 @@ body {
   color: #fff; }
 
 .check-out input, .check-out textarea, .check-out select {
-  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   color: #8e9c9f;
   border: none;
@@ -1437,13 +1437,19 @@ body {
   color: #c3ccce; }
 
 .check-out .col-form-label {
-  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-family: '$ff', Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   color: #8e9c9f;
   margin-top: auto; }
 
 .check-out .form-check-input {
   margin-top: 0; }
+
+.shopping-cart .order-steps__content {
+  background-image: url("../../img/shopping-cart.png"); }
+
+.shopping-cart .order-steps__item--1 {
+  color: #fff; }
 
 /* ==========================================================================
    Helper classes
