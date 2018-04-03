@@ -11,6 +11,7 @@ var minify = require('gulp-minify');
 var minifyCSS=require('gulp-minify-css');
 var rename = require("gulp-rename"); //minify elediyimiz dosyanın adını değiştirmek için kullandık bunu
 var concat = require('gulp-concat'); //tüm js dosyalarını birleştirip all.js diye bir js dosyasında toplamak için
+var flatten = require('gulp-flatten'); //fondaki klasör altında olan fontları tek klasöre toplamak için
 
 
 var path = {
@@ -45,12 +46,12 @@ var path = {
 
 
 gulp.task('html:build', function () {
-    gulp.src(path.src.html) //Выберем файлы по нужному пути
+    gulp.src(path.src.html) 
     .on('error', function(err) {
         console.log(err)
         this.emit('end')
     })
-        .pipe(rigger()) //Прогоним через rigger
+        .pipe(rigger()) //rigger ile dosyaları birleşdiriyoruz header footer gibi komponentleri import ediyoruz bir nevi
         .pipe(gulp.dest(path.build.html)); //Выплюнем их в папку build
     });
 
@@ -60,13 +61,13 @@ gulp.task('js:build', function () {
     gulp.src(path.src.js) //burdakileri al derle
 
     .pipe(concat('all.js'))
-    .pipe(gulp.dest(path.build.js))
+    .pipe(gulp.dest(path.build.js)) //minify etmeden all.js dosyasını ekledik aşağıdaki noSource: true  komutunu silersek buna gerek olmayacak sanırım denemedim ama mantık olarak o kod minify olunmamışını eklemesini engelliyor
     .pipe(minify({
         ext:{
 
             min:'.min.js'
         },
-        noSource:true //bu dist altındaki js klasörüne düşen index.jsyi düşürmüyorsadece min olan düşüyor 
+        noSource:true //bu build altındaki js klasörüne düşen index.js yi düşürmüyor sadece min olan düşüyor 
     }))
     
     
@@ -123,10 +124,11 @@ gulp.task('vendor:build', function () {
 
 gulp.task('fonts:build', function() {
     gulp.src(path.src.fonts)
-        .on('error', function(err) {
+    .on('error', function(err) {
         console.log(err)
         this.emit('end')
     })
+    .pipe(flatten())
     .pipe(gulp.dest(path.build.fonts))
 });
 

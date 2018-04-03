@@ -12,4 +12,52 @@
 		color: $color-white;
 	}
 
+	&__table{
+		min-width: 900px;
+	}
+
+	&__thead {
+		background-color: $color-dark-light;
+	}
+
+	&__img {
+		
+
+		img {
+			padding: 1rem;
+			border: 1px solid $color-border;
+			max-width: 17rem;
+		}
+		
+	}
+
+	&__product-name {
+
+	}
+
+	&__product-categori {
+		
+	}
+
+	&__price {
+		
+	}
+
+	&__quantity {
+		
+	}
+
+	&__quantity-count {
+		
+	}
+
+	&__total {
+		
+	}
+
+	&__delet {
+		
+	}
+
+
 }
