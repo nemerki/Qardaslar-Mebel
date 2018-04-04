@@ -1057,7 +1057,7 @@ body {
 [ Top bar ]*/
 .top-bar {
   height: 40px;
-  background-color: #222; }
+  background-color: #fff; }
 
 /*---------------------------------------------*/
 .left-top-bar {
@@ -1090,9 +1090,10 @@ body {
 /*==================================================================
 [ Menu ]*/
 .wrap-menu-desktop {
+  border-top: 1px solid #e5e5e5;
   position: fixed;
   z-index: 1100;
-  background-color: transparent;
+  background-color: #fff;
   width: 100%;
   height: 84px;
   top: 40px;

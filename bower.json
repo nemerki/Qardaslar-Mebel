@@ -17,5 +17,9 @@
   ],
   "dependencies": {
     "owl.carousel": "^2.3.3"
+  },
+  "devDependencies": {
+    "animsition": "^4.0.2",
+    "CSS-Hamburgers": "hamburgers#^1.0.2"
   }
 }
