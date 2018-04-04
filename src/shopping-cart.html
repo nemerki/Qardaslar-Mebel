@@ -27,8 +27,6 @@
 	<div class="container">
 
 		<div class="table-responsive-lg">
-
-
 			<table class="table shopping-cart__table">
 				<thead class="shopping-cart__thead">
 					<tr>
@@ -41,7 +39,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
+					<tr class="shopping-cart__tr">
 						<td class="shopping-cart__img"> <img src="img/shopping-cart-item.png" class="img-fluid"></td>
 						<td class="shopping-cart__product-name">Office Chair <span  class="shopping-cart__product-categori">CHAİR</span></td>
 						<td class="shopping-cart__price">150.00 <span class="azn">M</span></td>
@@ -51,11 +49,11 @@
 							<i class="fa fa-angle-right" aria-hidden="true"></i>
 						</td>
 						<td class="shopping-cart__total">150.00 <span class="azn">M</span></td>
-						<td class="shopping-cart__delet"><a href="#" title=""><i class="fa fa-times" aria-hidden="true"></i></a></td>
+						<td class="shopping-cart__delet"><i class="fa fa-times" aria-hidden="true"></i></td>
 					</tr>
 
 
-					<tr>
+					<tr class="shopping-cart__tr">
 						<td class="shopping-cart__img"> <img src="img/shopping-cart-item.png" class="img-fluid"></td>
 						<td class="shopping-cart__product-name">Office Chair <span  class="shopping-cart__product-categori">CHAİR</span></td>
 						<td class="shopping-cart__price">150.00 <span class="azn">M</span></td>
@@ -65,11 +63,11 @@
 							<i class="fa fa-angle-right" aria-hidden="true"></i>
 						</td>
 						<td class="shopping-cart__total">150.00 <span class="azn">M</span></td>
-						<td class="shopping-cart__delet"><a href="#" title=""><i class="fa fa-times" aria-hidden="true"></i></a></td>
+						<td class="shopping-cart__delet"><i class="fa fa-times" aria-hidden="true"></i></td>
 					</tr>
 
-					<tr>
-						<td class="shopping-cart__img"> <img src="img/slideright.png" class="img-fluid"></td>
+					<tr class="shopping-cart__tr">
+						<td class="shopping-cart__img"> <img src="img/blog1.png" class="img-fluid"></td>
 						<td class="shopping-cart__product-name">Office Chair <span  class="shopping-cart__product-categori">CHAİR</span></td>
 						<td class="shopping-cart__price">150.00 <span class="azn">M</span></td>
 						<td class="shopping-cart__quantity">
@@ -78,10 +76,10 @@
 							<i class="fa fa-angle-right" aria-hidden="true"></i>
 						</td>
 						<td class="shopping-cart__total">150.00 <span class="azn">M</span></td>
-						<td class="shopping-cart__delet"><a href="#" title=""><i class="fa fa-times" aria-hidden="true"></i></a></td>
+						<td class="shopping-cart__delet"><i class="fa fa-times" aria-hidden="true"></i></td>
 					</tr>
 
-					<tr>
+					<tr class="shopping-cart__tr">
 						<td class="shopping-cart__img"> <img src="img/404.png" class="img-fluid"></td>
 						<td class="shopping-cart__product-name">Office Chair <span  class="shopping-cart__product-categori">CHAİR</span></td>
 						<td class="shopping-cart__price">150.00 <span class="azn">M</span></td>
@@ -91,11 +89,123 @@
 							<i class="fa fa-angle-right" aria-hidden="true"></i>
 						</td>
 						<td class="shopping-cart__total">150.00 <span class="azn">M</span></td>
-						<td class="shopping-cart__delet"><a href="#" title=""><i class="fa fa-times" aria-hidden="true"></i></a></td>
+						<td class="shopping-cart__delet"><i class="fa fa-times" aria-hidden="true"></i></td>
 					</tr>
 
 				</tbody>
 			</table>
+		</div>
+
+		<div class="shopping-cart__btn-container">
+			<a href="#" class="btn shopping-cart__btn">continue shopping</a>
+			<a href="#" class="btn shopping-cart__btn">update cart</a>
+		</div>	
+
+		<div class="row">
+			<div class="col-lg-4">
+				<h3 class="check-out__tittle">ESTİMATE SHİPPİNG AND TAX</h3>
+				<div class="check-out__promotion">
+					<p class="check-out__promotion-text mb-5">Enter your destination to get shipping & tax</p>
+					<div class="row mb-3 ">
+						<div class="col-6">							
+							<label for="selectCountry" class=" col-form-label label">COUNTRY *  </label>							
+						</div>
+
+						<div class="col-6 mt-auto">
+							<select class="form-control select" id="selectCountry">
+								<option value=""></option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="row mb-3">
+						<div class="col-6">							
+							<label for="selectCountry" class=" col-form-label label">STATE / PROVINCE*</label>							
+						</div>
+
+						<div class="col-6 mt-auto">
+							<select class="form-control select" id="selectCountry">
+								<option value=""></option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="row mb-3">
+						<div class="col-6">							
+							<label for="selectCountry" class=" col-form-label label">ZIP / POSTALCODE* </label>							
+						</div>
+
+						<div class="col-6 mt-auto">
+							<select class="form-control select" id="selectCountry">
+								<option value=""></option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+						</div>
+					</div>
+
+					<a href="#" class="btn shopping-cart__btn mt-5 mb-3">update cart</a>
+
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				<h3 class="check-out__tittle">DISCOUNT CODE</h3>
+				<div class="check-out__promotion">
+					<p class="check-out__promotion-text">Enter your coupon code if you have one</p>
+					<div class="row mt-5 mb-3">
+						<div class="col-6">							
+							<input type="text" class="form-control input" id="inputPhone" placeholder="Coupon code">			
+						</div>
+
+						<div class="col-6 mt-auto">
+							<a href="#" class="btn shopping-cart__btn  mb-3">SUBSCRİBE</a>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				<h3 class="check-out__tittle">CART TOTAL</h3>
+				<div class="check-out__promotion">
+					
+					<div class="row mb-3">
+						<div class="col-6">							
+							<label for="selectCountry" class=" col-form-label label">SUB TOTAL *  </label>			
+						</div>
+
+						<div class="col-6 mt-auto">
+							<p class="shopping-cart__price">150.00 <span class="azn">M</span></p>
+						</div>
+					</div>
+
+					<div class="row mb-3">
+						<div class="col-6">							
+							<label for="selectCountry" class=" col-form-label label">GRAND TOTAL *  </label>			
+						</div>
+
+						<div class="col-6 mt-auto">
+							<p class="shopping-cart__price">150.00 <span class="azn">M</span></p>
+						</div>
+					</div>
+
+					<p class="check-out__promotion-text">Enter your coupon code if you have one</p>
+
+					<a href="#" class="btn shopping-cart__btn mt-5 mb-3">proceed to check out</a>
+
+				</div>
+			</div>
+
+			
+
 		</div>
 		
 	</div>

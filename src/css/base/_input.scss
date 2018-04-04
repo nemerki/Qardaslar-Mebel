@@ -1,0 +1,16 @@
+	.input, .textarea, .select{
+		@include font($lr,1.4rem, $color-dark-light);		
+		border: none;
+		border-bottom: 1px solid $color-light;			
+		
+
+		&:focus{
+			box-shadow: none;
+			border-bottom: 1px solid $color-primary;	
+
+		}  
+	}
+
+	.label {
+		@include font($lr, 1.4rem,  $color-dark-light);
+	}

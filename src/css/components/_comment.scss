@@ -21,7 +21,7 @@
 		}
 	}
 	&__date {
-		@include font($lr,1.2rem, #c3ccce);
+		@include font($lr,1.2rem, $color-light-2);
 		letter-spacing: 2px;
 		display: inline-block;
 	}

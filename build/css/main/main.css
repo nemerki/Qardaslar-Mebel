@@ -526,9 +526,9 @@ body {
   src: url("../../fonts/jaznr.eot?#iefix") format("embedded-opentype"), url("../../fonts/jaznr.woff2") format("woff2"), url("../../fonts/jaznr.woff") format("woff"), url("../../fonts/jaznr.ttf") format("truetype"), url("../../fonts/jaznr.svg#jaznr") format("svg"); }
 
 @font-face {
-  font-family: Break-Fill Bold;
-  src: url("../../fonts/Break-Fill Bold.eot");
-  src: url("../../fonts/Break-Fill Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Break-Fill Bold.woff2") format("woff2"), url("../../fonts/Break-Fill Bold.woff") format("woff"), url("../../fonts/Break-Fill Bold.ttf") format("truetype"), url("../../fonts/Break-Fill Bold.svg#Break-Fill Bold") format("svg"); }
+  font-family: BreakFill-Bold;
+  src: url("../../fonts/BreakFill-Bold.eot");
+  src: url("../../fonts/BreakFill-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/BreakFill-Bold.woff2") format("woff2"), url("../../fonts/BreakFill-Bold.woff") format("woff"), url("../../fonts/BreakFill-Bold.ttf") format("truetype"), url("../../fonts/BreakFill-Bold.svg#BreakFill-Bold") format("svg"); }
 
 @font-face {
   font-family: Break-Fill Light;
@@ -541,9 +541,9 @@ body {
   src: url("../../fonts/Break-Fill Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Break-Fill Regular.woff2") format("woff2"), url("../../fonts/Break-Fill Regular.woff") format("woff"), url("../../fonts/Break-Fill Regular.ttf") format("truetype"), url("../../fonts/Break-Fill Regular.svg#Break-Fill Regular") format("svg"); }
 
 @font-face {
-  font-family: Break-Fill Semibold;
-  src: url("../../fonts/Break-Fill Semibold.eot");
-  src: url("../../fonts/Break-Fill Semibold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Break-Fill Semibold.woff2") format("woff2"), url("../../fonts/Break-Fill Semibold.woff") format("woff"), url("../../fonts/Break-Fill Semibold.ttf") format("truetype"), url("../../fonts/Break-Fill Semibold.svg#Break-Fill Semibold") format("svg"); }
+  font-family: BreakFill-SemiBold;
+  src: url("../../fonts/BreakFill-SemiBold.eot");
+  src: url("../../fonts/BreakFill-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/BreakFill-SemiBold.woff2") format("woff2"), url("../../fonts/BreakFill-SemiBold.woff") format("woff"), url("../../fonts/BreakFill-SemiBold.ttf") format("truetype"), url("../../fonts/BreakFill-SemiBold.svg#BreakFill-SemiBold") format("svg"); }
 
 @font-face {
   font-family: Lato-Regular;
@@ -596,7 +596,24 @@ body {
   src: url("../../fonts/Myriad Pro Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Myriad Pro Regular.woff2") format("woff2"), url("../../fonts/Myriad Pro Regular.woff") format("woff"), url("../../fonts/Myriad Pro Regular.ttf") format("truetype"), url("../../fonts/Myriad Pro Regular.svg#Myriad Pro Regular") format("svg"); }
 
 .azn {
-  font-family: jaznb, Helvetica, Arial, sans-serif; }
+  font-family: jaznr, Helvetica, Arial, sans-serif; }
+
+.input, .textarea, .select {
+  font-family: Lato-Regular, Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  color: #8e9c9f;
+  border: none;
+  border-bottom: 1px solid #e7e7e7; }
+  .input:focus, .textarea:focus, .select:focus {
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+    border-bottom: 1px solid #d4bfa2; }
+
+.label {
+  font-family: Lato-Regular, Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  color: #8e9c9f; }
 
 .page-tittle {
   position: relative;
@@ -607,7 +624,7 @@ body {
   background-image: linear-gradient(to right, #f5f8fa 50%, #8e9c9f 50%);
   margin-bottom: 9.5rem; }
   .page-tittle__tittle {
-    font-family: Break-Fill Bold, Helvetica, Arial, sans-serif;
+    font-family: BreakFill-Bold, Helvetica, Arial, sans-serif;
     font-size: 3.6rem;
     color: #485355;
     padding-top: 16rem;
@@ -694,7 +711,7 @@ body {
     background-color: #d4bfa2; }
 
 .comment__tittle {
-  font-family: Break-Fill Bold, Helvetica, Arial, sans-serif;
+  font-family: BreakFill-Bold, Helvetica, Arial, sans-serif;
   font-size: 2.2rem;
   color: #485355; }
 
@@ -737,7 +754,7 @@ body {
   margin-bottom: 3rem; }
 
 .comment-add__tittle {
-  font-family: Break-Fill Bold, Helvetica, Arial, sans-serif;
+  font-family: BreakFill-Bold, Helvetica, Arial, sans-serif;
   font-size: 2.2rem;
   color: #485355; }
 
@@ -794,7 +811,7 @@ body {
       color: #8e9c9f;
       text-decoration: none; }
   .order-steps__item {
-    font-family: Break-Fill Bold, Helvetica, Arial, sans-serif;
+    font-family: BreakFill-Bold, Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
     color: #8e9c9f;
     display: -webkit-box;
@@ -886,7 +903,7 @@ body {
 .contact-info {
   margin-top: 10rem; }
   .contact-info__btn {
-    font-family: Break-Fill Bold, Helvetica, Arial, sans-serif;
+    font-family: BreakFill-Bold, Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
     color: #485355;
     margin-bottom: 3rem;
@@ -1054,7 +1071,7 @@ body {
       border: none; } }
 
 .blog__text {
-  font-family: Break-Fill Bold, Helvetica, Arial, sans-serif;
+  font-family: BreakFill-Bold, Helvetica, Arial, sans-serif;
   font-size: 3rem;
   color: #485355;
   max-width: 37rem;
@@ -1139,7 +1156,7 @@ body {
      object-fit: cover; }
 
 .blog-detail__header {
-  font-family: Break-Fill Bold, Helvetica, Arial, sans-serif;
+  font-family: BreakFill-Bold, Helvetica, Arial, sans-serif;
   font-size: 3rem;
   color: #485355;
   text-align: center;
@@ -1159,7 +1176,7 @@ body {
   color: #8e9c9f; }
 
 .blog-detail__subtittle {
-  font-family: Break-Fill Bold, Helvetica, Arial, sans-serif;
+  font-family: BreakFill-Bold, Helvetica, Arial, sans-serif;
   font-size: 2.2rem;
   color: #485355; }
 
@@ -1211,7 +1228,7 @@ body {
     display: flex; } }
 
 .blog-detail__btn {
-  font-family: Break-Fill Bold, Helvetica, Arial, sans-serif;
+  font-family: BreakFill-Bold, Helvetica, Arial, sans-serif;
   font-size: 1.8rem;
   color: #8e9c9f;
   padding: .8rem 3rem;
@@ -1257,7 +1274,7 @@ body {
     height: 2px;
     background-color: #d4bfa2; }
   .saying__author {
-    font-family: Break-Fill Bold, Helvetica, Arial, sans-serif;
+    font-family: BreakFill-Bold, Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
     color: #485355;
     margin-top: 1rem; }
@@ -1468,22 +1485,130 @@ body {
 .check-out .form-check-input {
   margin-top: 0; }
 
-.shopping-cart .order-steps__content {
-  background-image: url("../../img/shopping-cart.png"); }
-
-.shopping-cart .order-steps__item--1 {
-  color: #fff; }
-
-.shopping-cart__table {
-  min-width: 900px; }
-
-.shopping-cart__thead {
-  background-color: #8e9c9f; }
-
-.shopping-cart__img img {
-  padding: 1rem;
-  border: 1px solid #e5e5e5;
-  max-width: 17rem; }
+.shopping-cart {
+  margin-bottom: 8rem; }
+  .shopping-cart .order-steps__content {
+    background-image: url("../../img/shopping-cart.png"); }
+  .shopping-cart .order-steps__item--1 {
+    color: #fff; }
+  .shopping-cart__table {
+    min-width: 767px;
+    text-align: center;
+    border: 1px solid #e5e5e5; }
+  .shopping-cart__thead {
+    background-color: #8e9c9f;
+    font-family: BreakFill-Bold, Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    color: #fff; }
+  .shopping-cart td {
+    vertical-align: middle;
+    border: none; }
+  .shopping-cart th {
+    padding: 2rem 0; }
+    .shopping-cart th .fa {
+      width: 3rem;
+      height: 3rem;
+      border: 1px solid #c3ccce;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+         -moz-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+         -moz-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+  .shopping-cart__img {
+    max-width: 24rem; }
+    .shopping-cart__img img {
+      padding: 1rem;
+      border: 1px solid #e5e5e5;
+      max-width: 17rem; }
+  .shopping-cart__product-name {
+    font-family: BreakFill-Bold, Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    color: #485355; }
+  .shopping-cart__product-categori {
+    display: block;
+    font-family: BreakFill-Bold, Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #c3ccce;
+    letter-spacing: 2px; }
+  .shopping-cart__price {
+    font-family: Lato-Light, Helvetica, Arial, sans-serif;
+    font-size: 1.8rem;
+    color: #485355; }
+  .shopping-cart__quantity .fa {
+    font-size: 1.8rem;
+    cursor: pointer; }
+  .shopping-cart__quantity-count {
+    font-family: Lato-Regular, Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    color: #c3ccce;
+    padding-left: 4rem;
+    padding-right: 4rem; }
+  .shopping-cart__total {
+    font-family: Lato-Light, Helvetica, Arial, sans-serif;
+    font-size: 1.8rem;
+    color: #485355; }
+  .shopping-cart__delet .fa {
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #e5e5e5;
+    color: #8e9c9f;
+    font-size: 1.4rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .shopping-cart__btn-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 4rem 0; }
+  .shopping-cart__btn {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #e5e5e5;
+    font-family: Roboto-Bold, Helvetica, Arial, sans-serif;
+    font-size: 1.3rem;
+    color: #485355;
+    padding: 1rem 3rem;
+    -webkit-border-radius: 5rem;
+       -moz-border-radius: 5rem;
+            border-radius: 5rem; }
+    .shopping-cart__btn:hover {
+      background-color: #485355;
+      color: #fff; }
+    .shopping-cart__btn:focus {
+      -webkit-box-shadow: none;
+         -moz-box-shadow: none;
+              box-shadow: none; }
 
 /* ==========================================================================
    Helper classes

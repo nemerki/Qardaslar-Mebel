@@ -3,6 +3,7 @@
 //footer --> layout --> footer
 
 .shopping-cart {
+	margin-bottom: 8rem;
 
 	.order-steps__content {		
 		background-image: url('../../img/shopping-cart.png');		
@@ -13,15 +14,41 @@
 	}
 
 	&__table{
-		min-width: 900px;
+		min-width: 767px;
+		text-align: center;
+		border: 1px solid $color-border;
+
 	}
 
 	&__thead {
 		background-color: $color-dark-light;
+		@include font($bfb, 1.4rem, $color-white);
+		
+
+	}
+
+	td {
+		vertical-align: middle;
+		border: none;
+	}
+
+	th {
+		padding: 2rem 0;
+
+
+		.fa{
+			width: 3rem;
+			height: 3rem;
+			border: 1px solid  $color-light-2;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+		}
 	}
 
 	&__img {
-		
+		max-width: 24rem;
 
 		img {
 			padding: 1rem;
@@ -29,34 +56,78 @@
 			max-width: 17rem;
 		}
 		
-	}
+	} 
 
 	&__product-name {
-
+		@include font($bfb, 1.6rem, $color-dark);
 	}
 
 	&__product-categori {
-		
+		display: block;
+		@include font($bfb, 1.2rem, $color-light-2);
+		letter-spacing: 2px;
 	}
 
 	&__price {
-		
+		@include font($ll, 1.8rem, $color-dark);
 	}
 
 	&__quantity {
 		
+		.fa {
+			font-size: 1.8rem;
+			cursor: pointer;
+		}
 	}
 
 	&__quantity-count {
-		
+		@include font($lr, 1.4rem, $color-light-2);
+		padding-left: 4rem;
+		padding-right: 4rem;
 	}
 
 	&__total {
-		
+		@include font($ll, 1.8rem, $color-dark);
 	}
 
 	&__delet {
+
+		.fa{
+			cursor: pointer;
+			width: 3rem;
+			height: 3rem;
+			border: 1px solid  $color-border;
+			color: $color-dark-light;
+			font-size: 1.4rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 		
+	}
+
+	&__btn-container {
+		display: flex;
+		justify-content: space-between;
+		margin: 4rem 0;
+	}
+
+	&__btn {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		border: 1px solid $color-border;
+		@include font($rb, 1.3rem, $color-dark);
+		padding: 1rem 3rem;
+		border-radius: 5rem;
+
+		&:hover {
+			background-color: $color-dark;
+			color: $color-white;
+		}
+
+		&:focus {
+			box-shadow: none;
+		}
 	}
 
 
