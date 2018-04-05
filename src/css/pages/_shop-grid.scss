@@ -1,0 +1,180 @@
+//navigation --> layout --> navigation
+//page-tittle --> components --> page-tittle
+//footer --> layout --> footer
+
+.shop-grid {
+
+	.page-tittle{
+		background-image: linear-gradient(to right , transparent 50% , rgba(255, 255, 255, 0.3) 50%), url(../../img/shop-grid-tittle.png);
+		background-size: cover;
+
+		&__tittle {
+			color: $color-white;
+		}
+
+		.breadcrumb-item, .breadcrumb-item a{
+			color: $color-white;
+		}
+
+		.breadcrumb-item a:hover{
+			color: $color-dark;			
+		}
+
+	}
+
+	.input {
+		padding: 1rem;
+		border: 1px solid $color-border;
+		border-right: none;
+
+		&:focus {
+			border-color: $color-primary;
+		}
+	}
+
+	&__serch-btn {
+		height: 100%;
+		background-color: $color-primary;
+		font-size: 1.8rem;
+		color: $color-white;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		border: 1px solid $color-border;
+
+		&:hover {
+			background-color: $color-white;
+			color: $color-primary;
+		}
+
+		&:focus {
+			box-shadow: none;
+		}
+	}
+
+
+	&__tittle {
+		display: flex;
+		@include font($bfb, 1.8rem, $color-dark);
+		margin-bottom: 3rem;
+		margin-top: 5rem;
+	}
+
+	&__tittle-line {
+		width: 100%;
+		height: 1px;
+		background-color: $color-primary;
+		display: flex;
+		align-items: center;
+
+	}
+
+	&__categori {
+
+	}
+
+	&__categori-list {
+		
+	}
+
+	&__categori-item {
+		border-bottom: 1px solid $color-border !important;
+		padding: 1.5rem 0;
+	}
+
+	&__categori-link {
+		@include font($lsb, 1.6rem, $color-dark-light);
+
+		&:hover {
+			color: $color-primary;
+		}
+	}
+	&__shopby {
+
+	}
+
+	&__shopby-price {
+		@include font($lsb, 1.4rem, $color-dark-light);
+		display: flex;
+		flex-direction: column;
+		&--1 {
+			@include font($ll,1.6rem, $color-dark);
+		}
+	}
+
+	&__banner {
+		background-image: url('../../img/bannerbg.png');
+		padding: 10rem 0;
+		text-align: center;
+		margin-top: 5rem;
+
+		
+	}
+	&__banner-tittle {
+
+		@include font($jsr, 3.6rem, $color-white);
+		margin-bottom: 2.5rem;
+
+		@include respondmax(lg) {
+			font-size: 2.4rem;
+		}
+
+		@include respondmax(md) {
+			font-size: 3.6rem;
+		}
+	}
+	&__banner-subtittle {
+
+		@include font($lb, 1.2rem, $color-white);
+		letter-spacing: 5px;
+		text-transform: uppercase;
+
+
+	}
+
+	&__featured {
+
+	}
+
+	&__featured-list {
+
+	}
+
+	&__featured-item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 3rem;
+	}
+
+	&__featured-img-link {
+
+	}
+	&__featured-img {
+		max-height: 7rem;
+		max-width: 7rem;
+		padding: 1rem .5rem;
+		border: 1px solid $color-border;
+		margin-right: 3rem;
+	}
+
+	&__featured-text {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__featured-name-link {
+		@include font($bfb, 1.6rem, $color-dark);
+		margin-bottom: 1rem;
+
+		&:hover {
+			color: $color-primary;
+		}
+	}
+
+	&__featured-price {
+		@include font($ll, 1.8rem, $color-dark);
+	}
+
+
+
+
+}

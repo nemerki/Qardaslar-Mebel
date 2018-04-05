@@ -1,0 +1,32 @@
+.noUi-horizontal {
+	height: 2px;
+	background-color: $color-border;
+}
+.noUi-connect {
+	background: $color-primary;
+}
+
+.noUi-target {
+
+	border:none;
+	box-shadow: none;
+}
+
+.noUi-horizontal .noUi-handle {
+	width: 15px;
+	height: 15px;
+	top: -7px;
+	border-radius: 50%;
+	background-color: $color-primary;
+}
+
+.noUi-handle {
+	box-shadow: none;
+	cursor: pointer;
+
+	&:focus {
+		box-shadow: none;
+		outline: none;
+
+	}
+}

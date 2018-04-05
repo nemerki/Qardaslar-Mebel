@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "animsition": "^4.0.2",
-    "CSS-Hamburgers": "hamburgers#^1.0.2"
+    "CSS-Hamburgers": "hamburgers#^1.0.2",
+    "nouislider": "^11.1.0"
   }
 }

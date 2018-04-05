@@ -515,6 +515,10 @@ body {
      -moz-box-sizing: border-box;
           box-sizing: border-box; }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px; } }
+
 @font-face {
   font-family: jaznb;
   src: url("../../fonts/jaznb.eot");
@@ -628,7 +632,8 @@ body {
     font-size: 3.6rem;
     color: #485355;
     padding-top: 16rem;
-    margin: 0; }
+    margin: 0;
+    margin-top: 8rem; }
   .page-tittle__breadcrumb {
     background-color: transparent;
     padding-bottom: 16rem;
@@ -858,6 +863,39 @@ body {
     color: #6f787f; }
     .order-steps__text span {
       color: #d4bfa2; }
+
+.noUi-horizontal {
+  height: 2px;
+  background-color: #e5e5e5; }
+
+.noUi-connect {
+  background: #d4bfa2; }
+
+.noUi-target {
+  border: none;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none; }
+
+.noUi-horizontal .noUi-handle {
+  width: 15px;
+  height: 15px;
+  top: -7px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #d4bfa2; }
+
+.noUi-handle {
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer; }
+  .noUi-handle:focus {
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+    outline: none; }
 
 .footer {
   text-align: center; }
@@ -2548,6 +2586,175 @@ body {
       -webkit-box-shadow: none;
          -moz-box-shadow: none;
               box-shadow: none; }
+
+.shop-grid .page-tittle {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, rgba(255, 255, 255, 0.3))), url(../../img/shop-grid-tittle.png);
+  background-image: -webkit-linear-gradient(left, transparent 50%, rgba(255, 255, 255, 0.3) 50%), url(../../img/shop-grid-tittle.png);
+  background-image: -moz-linear-gradient(left, transparent 50%, rgba(255, 255, 255, 0.3) 50%), url(../../img/shop-grid-tittle.png);
+  background-image: -o-linear-gradient(left, transparent 50%, rgba(255, 255, 255, 0.3) 50%), url(../../img/shop-grid-tittle.png);
+  background-image: linear-gradient(to right, transparent 50%, rgba(255, 255, 255, 0.3) 50%), url(../../img/shop-grid-tittle.png);
+  -moz-background-size: cover;
+       background-size: cover; }
+  .shop-grid .page-tittle__tittle {
+    color: #fff; }
+  .shop-grid .page-tittle .breadcrumb-item, .shop-grid .page-tittle .breadcrumb-item a {
+    color: #fff; }
+  .shop-grid .page-tittle .breadcrumb-item a:hover {
+    color: #485355; }
+
+.shop-grid .input {
+  padding: 1rem;
+  border: 1px solid #e5e5e5;
+  border-right: none; }
+  .shop-grid .input:focus {
+    border-color: #d4bfa2; }
+
+.shop-grid__serch-btn {
+  height: 100%;
+  background-color: #d4bfa2;
+  font-size: 1.8rem;
+  color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 1px solid #e5e5e5; }
+  .shop-grid__serch-btn:hover {
+    background-color: #fff;
+    color: #d4bfa2; }
+  .shop-grid__serch-btn:focus {
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none; }
+
+.shop-grid__tittle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: BreakFill-Bold, Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  color: #485355;
+  margin-bottom: 3rem;
+  margin-top: 5rem; }
+
+.shop-grid__tittle-line {
+  width: 100%;
+  height: 1px;
+  background-color: #d4bfa2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.shop-grid__categori-item {
+  border-bottom: 1px solid #e5e5e5 !important;
+  padding: 1.5rem 0; }
+
+.shop-grid__categori-link {
+  font-family: Lato-Semibold, Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  color: #8e9c9f; }
+  .shop-grid__categori-link:hover {
+    color: #d4bfa2; }
+
+.shop-grid__shopby-price {
+  font-family: Lato-Semibold, Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  color: #8e9c9f;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .shop-grid__shopby-price--1 {
+    font-family: Lato-Light, Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    color: #485355; }
+
+.shop-grid__banner {
+  background-image: url("../../img/bannerbg.png");
+  padding: 10rem 0;
+  text-align: center;
+  margin-top: 5rem; }
+
+.shop-grid__banner-tittle {
+  font-family: JosefinSans-Regular, Helvetica, Arial, sans-serif;
+  font-size: 3.6rem;
+  color: #fff;
+  margin-bottom: 2.5rem; }
+  @media (max-width: 991px) {
+    .shop-grid__banner-tittle {
+      font-size: 2.4rem; } }
+  @media (max-width: 767px) {
+    .shop-grid__banner-tittle {
+      font-size: 3.6rem; } }
+
+.shop-grid__banner-subtittle {
+  font-family: Lato-Bold, Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase; }
+
+.shop-grid__featured-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem; }
+
+.shop-grid__featured-img {
+  max-height: 7rem;
+  max-width: 7rem;
+  padding: 1rem .5rem;
+  border: 1px solid #e5e5e5;
+  margin-right: 3rem; }
+
+.shop-grid__featured-text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.shop-grid__featured-name-link {
+  font-family: BreakFill-Bold, Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  color: #485355;
+  margin-bottom: 1rem; }
+  .shop-grid__featured-name-link:hover {
+    color: #d4bfa2; }
+
+.shop-grid__featured-price {
+  font-family: Lato-Light, Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  color: #485355; }
 
 /* ==========================================================================
    Helper classes
