@@ -22,6 +22,132 @@
 
 	}
 
+	&__listing {
+
+		select {
+			@include  font($lr, 1.4rem, $color-dark-light);
+
+			&:focus {
+				box-shadow: none;
+				outline: none;
+				border-color: $color-primary;
+			}
+		}
+
+		option {
+			@include  font($lr, 1.4rem, $color-dark-light);
+
+		}
+	}
+
+
+
+	&__listing-style {
+		display: flex;
+
+		.fa {
+			width: 4rem;
+			height: 4rem;
+			font-size: 2.5rem;
+			border:1px solid $color-border;
+			display: flex;
+			justify-content:center;
+			align-items :center;
+			cursor: pointer;
+			color: #ecedee;
+
+			&:hover {
+				color: $color-white;
+				background-color: $color-primary;
+			}
+		}
+
+	}
+
+	&__listing-active {
+		color: $color-white;
+		background-color: $color-primary;
+	}
+
+	&__listing-list {
+
+	}
+
+	&__listing-grid {
+
+	}
+
+	&__grid {
+
+	}
+	&__grid-item {
+		padding: 3rem 2rem 3rem 2rem;
+		border: 1px solid $color-border;
+		position: relative;
+		transition: transform .1s;
+
+		&:hover {
+			box-shadow: 6px 6px 71px -10px rgba(0,0,0,0.61);
+			transform: scale(1.02)
+		}
+	}
+	&__grid-item:hover &__overlay{
+		opacity:1;
+	}
+	&__grid-img {
+		width: 100%;
+	}
+
+	&__grid-price {
+		@include font($ll, 1.8rem, $color-dark);
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__grid-tittle {
+		@include font($bfb, 1.6rem, $color-dark);
+
+		&:hover {
+			color: $color-primary;
+		}
+	}
+
+	&__overlay {
+		display: flex;
+		padding: 1rem;
+		border: 1px solid $color-border;
+		border-radius: 5rem;
+		background-color: #fff;
+		transition: .5s ease;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		box-shadow: 6px 6px 71px -10px rgba(0,0,0,0.61);
+
+
+		.fa {
+			width: 5rem;
+			height: 5rem;
+			border-radius: 50%;
+			font-size: 3rem;
+			border:1px solid $color-border;
+			display: flex;
+			justify-content:center;
+			align-items :center;
+			cursor: pointer;
+
+			&:hover {
+				color: $color-white;
+				background-color: $color-primary;
+			}
+		}
+	}
+
+
+
 	.input {
 		padding: 1rem;
 		border: 1px solid $color-border;
@@ -174,61 +300,34 @@
 		@include font($ll, 1.8rem, $color-dark);
 	}
 
-	&__grid {
+	
 
-	}
-	&__grid-item {
-		padding: 3rem 2rem 3rem 2rem;
-		border: 1px solid $color-border;
-		position: relative;
-	}
-	&__grid-item:hover &__overlay{
-		opacity:1;
-	}
-	&__grid-img {
-		width: 100%;
+
+	.pagination {
+		justify-content: center;
+		margin-top: 6rem;
+		margin-bottom: 10rem;
 	}
 
-	&__grid-price {
-		@include font($ll, 1.8rem, $color-dark);
+	.page-link {
+		@include font($lsb, 1.4rem, $color-dark);
+		width: 4rem;
+		height: 4rem;
 		display: flex;
-		justify-content: flex-end;
+		justify-content: center;
+		align-items: center;
+		margin-left: 1rem;
+		border-color: #e5e5e5;
 	}
 
-	&__grid-tittle {
-		@include font($bfb, 1.6rem, $color-dark);
+	.page-item.active .page-link {
+		background-color: $color-primary;
+		border-color: $color-border;
 	}
 
-	&__overlay {
-		display: flex;
-		padding-top: 1rem;
-		border: 1px solid $color-border;
-		border-radius: 5rem;
-
-		transition: .5s ease;
-		opacity: 0;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		text-align: center;
-
-
-		.fa {
-			width: 5rem;
-			height: 5rem;
-			border-radius: 50%;
-			font-size: 3rem;
-			border:1px solid $color-border;
-			display: flex;
-			justify-content:center;
-			align-items :center;
-		}
+	.page-link:hover {
+		background-color: $color-primary;
+		color: $color-white;
 	}
-
-
-
-
 
 }
