@@ -1,0 +1,45 @@
+
+.featured{
+
+	&__carousel {
+
+		.owl-item {
+			padding: 3rem 2.5rem 3rem 1.5rem !important;
+		}
+
+		.owl-nav {
+			position: absolute;
+			top: 40%;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			z-index: -1;
+
+			.fa {
+				width: 30px;
+				height: 30px;	
+				border: 1px solid $color-dark;	
+				border-radius: 50%;
+				display: flex;		
+				align-items: center;		
+				justify-content: center;
+				font-size: 2rem;
+				color: $color-dark;
+
+				&:hover {
+					color: $color-primary;
+					border-color: $color-primary;
+				}
+			}
+
+			.fa-angle-left {
+				margin-left: -4rem;
+			}
+
+			.fa-angle-right {
+				margin-right: -3rem;
+			}
+		}
+	}
+
+}

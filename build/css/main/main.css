@@ -619,6 +619,19 @@ body {
   font-size: 1.4rem;
   color: #8e9c9f; }
 
+.layout-tittle {
+  text-align: center; }
+  .layout-tittle__tittle {
+    font-family: BreakFill-Bold, Helvetica, Arial, sans-serif;
+    font-size: 3.6rem;
+    color: #485355;
+    margin-bottom: 1rem; }
+  .layout-tittle__subtittle {
+    font-family: Lato-Bold, Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #8e9c9f;
+    letter-spacing: 7px; }
+
 .page-tittle {
   position: relative;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #f5f8fa), color-stop(50%, #8e9c9f));
@@ -633,7 +646,8 @@ body {
     color: #485355;
     padding-top: 16rem;
     margin: 0;
-    margin-top: 8rem; }
+    margin-top: 8rem;
+    text-transform: uppercase; }
   .page-tittle__breadcrumb {
     background-color: transparent;
     padding-bottom: 16rem;
@@ -2026,6 +2040,77 @@ body {
     -o-object-fit: contain;
        object-fit: contain; }
 
+.featured__carousel .owl-item {
+  padding: 3rem 2.5rem 3rem 1.5rem !important; }
+
+.featured__carousel .owl-nav {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: -1; }
+  .featured__carousel .owl-nav .fa {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #485355;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 2rem;
+    color: #485355; }
+    .featured__carousel .owl-nav .fa:hover {
+      color: #d4bfa2;
+      border-color: #d4bfa2; }
+  .featured__carousel .owl-nav .fa-angle-left {
+    margin-left: -4rem; }
+  .featured__carousel .owl-nav .fa-angle-right {
+    margin-right: -3rem; }
+
+.latest-blogs .card {
+  margin-bottom: 2rem; }
+
+.latest-blogs .card-body {
+  text-align: center;
+  margin-top: 2.5rem; }
+
+.latest-blogs .card-title {
+  font-family: Break-Fill Regular, Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  color: #485355; }
+
+.latest-blogs .card-text {
+  font-family: Lato-Regular, Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  color: #8e9c9f;
+  margin-bottom: 2rem; }
+
+.latest-blogs .blog__comment {
+  padding-bottom: 3rem; }
+
 .contact__content {
   margin-bottom: 10rem; }
 
@@ -2675,7 +2760,8 @@ body {
             transform: scale(1.02); }
 
 .shop-grid__grid-item:hover .shop-grid__overlay {
-  opacity: 1; }
+  opacity: 1;
+  cursor: pointer; }
 
 .shop-grid__grid-img {
   width: 100%; }
@@ -2953,6 +3039,21 @@ body {
 .shop-grid .page-link:hover {
   background-color: #d4bfa2;
   color: #fff; }
+
+.single-product .page-tittle {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, rgba(255, 255, 255, 0.3))), url(../../img/shop-grid-tittle.png);
+  background-image: -webkit-linear-gradient(left, transparent 50%, rgba(255, 255, 255, 0.3) 50%), url(../../img/shop-grid-tittle.png);
+  background-image: -moz-linear-gradient(left, transparent 50%, rgba(255, 255, 255, 0.3) 50%), url(../../img/shop-grid-tittle.png);
+  background-image: -o-linear-gradient(left, transparent 50%, rgba(255, 255, 255, 0.3) 50%), url(../../img/shop-grid-tittle.png);
+  background-image: linear-gradient(to right, transparent 50%, rgba(255, 255, 255, 0.3) 50%), url(../../img/shop-grid-tittle.png);
+  -moz-background-size: cover;
+       background-size: cover; }
+  .single-product .page-tittle__tittle {
+    color: #fff; }
+  .single-product .page-tittle .breadcrumb-item, .single-product .page-tittle .breadcrumb-item a {
+    color: #fff; }
+  .single-product .page-tittle .breadcrumb-item a:hover {
+    color: #485355; }
 
 /* ==========================================================================
    Helper classes

@@ -93,7 +93,11 @@
 	}
 	&__grid-item:hover &__overlay{
 		opacity:1;
+		cursor: pointer;
 	}
+
+	
+
 	&__grid-img {
 		width: 100%;
 	}

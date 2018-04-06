@@ -13,22 +13,22 @@
 @import "base/input";
 
 
-@import "components/about"; 
+@import "components/layout-tittle"; 
 @import "components/page-tittle";
 @import "components/contact-box"; 
 @import "components/comment"; 
 @import "components/order-steps"; 
 @import "components/nouislider"; 
-
-
-   
+  
 
 @import "layout/footer";
 @import "layout/header";
 @import "layout/navigation";
 @import "layout/partners";
+@import "layout/featured";
+@import "layout/latest-blogs";
 
-
+@import "pages/index";
 @import "pages/contact";
 @import "pages/blog";
 @import "pages/blog-detail";
@@ -37,6 +37,8 @@
 @import "pages/check-out";
 @import "pages/shopping-cart";
 @import "pages/shop-grid";
+@import "pages/single-product";
+
   
 
 @import "abstracts/bt5end";

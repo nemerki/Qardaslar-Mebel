@@ -1,0 +1,27 @@
+//navigation --> layout --> navigation
+//page-tittle --> components --> page-tittle
+//featured --> layout --> featured
+//footer --> layout --> footer
+
+.single-product {
+
+	.page-tittle{
+		background-image: linear-gradient(to right , transparent 50% , rgba(255, 255, 255, 0.3) 50%), url(../../img/shop-grid-tittle.png);
+		background-size: cover;
+
+		&__tittle {
+			color: $color-white;
+		}
+
+		.breadcrumb-item, .breadcrumb-item a{
+			color: $color-white;
+		}
+
+		.breadcrumb-item a:hover{
+			color: $color-dark;			
+		}
+
+	}
+}
+
+

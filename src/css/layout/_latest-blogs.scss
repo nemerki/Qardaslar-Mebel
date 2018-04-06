@@ -1,0 +1,24 @@
+.latest-blogs {
+
+	.card {
+		margin-bottom: 2rem;
+	}
+
+	.card-body {
+		text-align: center;
+		margin-top: 2.5rem;
+	}
+
+	.card-title{
+		@include font($bfr, 2rem, $color-dark);
+	}
+
+	.card-text {
+		@include font($lr, 1.4rem, $color-dark-light);
+		margin-bottom: 2rem;
+	}
+
+	.blog__comment {
+		padding-bottom: 3rem;
+	}
+}

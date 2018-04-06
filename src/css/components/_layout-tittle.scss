@@ -1,0 +1,13 @@
+.layout-tittle {
+	text-align: center;
+
+	&__tittle {
+		@include  font($bfb, 3.6rem, $color-dark);
+		margin-bottom: 1rem;
+	}
+
+	&__subtittle {
+		@include  font($lb, 1.2rem, $color-dark-light);
+		letter-spacing: 7px;
+	}
+}
