@@ -911,6 +911,23 @@ body {
             box-shadow: none;
     outline: none; }
 
+.mybtn {
+  text-align: center; }
+  .mybtn__btn {
+    font-family: Roboto-Bold, Helvetica, Arial, sans-serif;
+    font-size: 1.3rem;
+    color: #485355;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #e5e5e5;
+    padding: 1rem 4rem;
+    -webkit-border-radius: 5rem;
+       -moz-border-radius: 5rem;
+            border-radius: 5rem; }
+    .mybtn__btn:hover {
+      background-color: #485355;
+      color: #fff; }
+
 .footer {
   text-align: center; }
   .footer__tittle {
@@ -2110,6 +2127,24 @@ body {
 
 .latest-blogs .blog__comment {
   padding-bottom: 3rem; }
+
+.news-products {
+  margin: 10rem 0; }
+  .news-products__content {
+    margin-top: 6rem; }
+  .news-products .shop-grid__grid-item {
+    height: 100%; }
+  .news-products .nav-tabs {
+    border-bottom: none; }
+  .news-products .nav-tabs .nav-link {
+    font-family: Lato-Semibold, Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    color: #485355;
+    border: none; }
+    .news-products .nav-tabs .nav-link:hover {
+      color: #d4bfa2; }
+  .news-products .nav-tabs .nav-item.show .nav-link, .news-products .nav-tabs .nav-link.active {
+    color: #d4bfa2; }
 
 .contact__content {
   margin-bottom: 10rem; }
