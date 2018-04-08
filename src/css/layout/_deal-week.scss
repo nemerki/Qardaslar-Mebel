@@ -1,0 +1,153 @@
+.deal-week {
+	background-color: #f5f8fa;
+	padding-bottom: 4rem;
+	padding-top: 10rem;
+
+	&__carousel {
+		max-height: 41rem;
+		margin-top: 7rem;
+
+		@media only screen and (min-device-width: 991px) and (max-device-width: 1200px) {
+			max-height: 46rem;
+
+		}
+
+		&__item {
+			//margin:7rem;
+			transform: scale(.51);
+			opacity: .3;
+
+
+			&:focus {
+				outline: 0;
+			}
+		}
+
+		&__img {
+			max-height: 30rem;
+			margin: 0 auto;
+		}
+
+		&__description {
+			opacity: 0;
+			display: flex;
+			justify-content: space-between;
+			margin-top: 3rem;
+			margin-bottom: 4rem;
+
+			@media only screen and (min-device-width: 991px) and (max-device-width: 1200px) {
+				flex-direction: column;
+				text-align: center;
+			}
+
+		}
+
+		&__tittle {
+			@include font($lsb, 1.8rem, $color-dark, $lh:2.4rem);
+		}
+		&__price {
+			@include font($ll, 2.4rem, $color-dark, $lh:2.6rem);
+
+			@media only screen and (min-device-width: 991px) and (max-device-width: 1200px) {
+				margin-top: 3rem;
+
+			}
+		}
+
+
+	}
+
+	.slick-current {
+		transform: scale(1);
+		opacity: 1;
+		//width: 40rem !important;
+		
+	}
+	.slick-current &__carousel__description {
+
+		opacity: 1;
+
+	}
+
+	.fa {
+		width: 3rem;
+		height: 3rem;
+		color: $color-dark;
+		border: 1px solid $color-dark;
+		border-radius: 50%;
+		font-size: 2.5rem;
+		display: flex;
+		align-items:center;
+		justify-content: center;
+		cursor: pointer;
+	}
+
+	.slick-prev {
+		
+		left: 0;
+		z-index: 1;
+		&:before{
+			content:"";
+		}
+	}
+
+	.slick-next {
+		right: 0;
+		z-index: 1;
+
+		&:before {
+			content: '';
+		}
+	}
+
+	.slick-dots {
+		bottom: 0;
+
+		li button:before {
+			width: 15px;
+			height: 15px;
+			border: 2px solid $color-dark;
+			border-radius: 50%;
+			color: transparent;
+		}
+
+		li.slick-active button:before {
+			border: 3px solid $color-dark;
+		}
+	}
+
+	.slick-current.deal-week__carousel__item:hover  .shop-grid__overlay {
+		opacity: 1;
+		top:40%;
+	}
+
+	&__counter {
+		max-width: 63rem;
+		margin: 6rem auto;
+		background-color: #fff;
+		border-radius: 7rem;
+		display: flex;
+		justify-content: space-between;
+		padding: 1.5rem 3rem;
+		box-shadow: 0px 15px 30px 0 rgba(0,0,0,0.15);
+
+		p{
+			@include font($ll, 3.6rem, $color-dark, $lh:3rem);
+
+			@include respondmax(sm){
+				font-size: 2rem;
+			}
+		}
+
+		span {
+			@include font($lsb, 1.6rem, $color-dark-light);
+
+			@include respondmax(sm){
+				font-size: 1.2rem;
+			}
+		}
+	}
+
+	
+}
+

@@ -87,7 +87,7 @@
 		transition: transform .1s;
 
 		&:hover {
-			box-shadow: 6px 6px 71px -10px rgba(0,0,0,0.61);
+			box-shadow: 0 15px 30px 0 rgba(0,0,0,0.2);
 			transform: scale(1.02)
 		}
 	}
@@ -129,7 +129,7 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		text-align: center;
-		box-shadow: 6px 6px 71px -10px rgba(0,0,0,0.61);
+		box-shadow: 0 15px 30px 0 rgba(0,0,0,0.2);
 
 
 		.fa {
