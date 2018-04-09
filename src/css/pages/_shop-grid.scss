@@ -64,6 +64,11 @@
 
 	}
 
+	&__listing-style .active .fa {
+		color: $color-white;
+		background-color: $color-primary;
+	}
+
 	&__listing-active {
 		color: $color-white;
 		background-color: $color-primary;
@@ -71,7 +76,9 @@
 
 	&__listing-list {
 
+
 	}
+
 
 	&__listing-grid {
 
@@ -150,7 +157,61 @@
 		}
 	}
 
+	&__list {
 
+		&-item {
+			border: 1px solid $color-border;
+			padding: 1rem 0;
+			margin: 0;
+
+			&:hover {
+				box-shadow: 0 15px 30px 0 rgba(0,0,0,0.2);
+				transform: scale(1.02);
+			}
+		}
+
+		&-tittle {
+			@include font($bfb, 2.8rem, $color-dark, $lh:4rem);
+
+			&:hover {
+				color: $color-primary;
+			}
+		}
+
+		&-text {
+			@include font($lr, 1.6rem, $color-dark-light, $lh:2rem);
+		}
+
+
+		&-price {
+			@include font($ll, 1.8rem, $color-dark, $lh:4.4rem);
+		}
+
+
+		&-add {
+			display: flex;
+			text-align: center;
+
+
+			.fa {
+				width: 4rem;
+				height: 4rem;
+				border-radius: 50%;
+				font-size: 2.5rem;
+				border:1px solid $color-border;
+				display: flex;
+				justify-content:center;
+				align-items :center;
+				cursor: pointer;
+
+				&:hover {
+					color: $color-white;
+					background-color: $color-primary;
+				}
+			}
+
+		}
+	}
 
 	.input {
 		padding: 1rem;

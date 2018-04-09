@@ -1909,6 +1909,19 @@ body {
         .deal-week__counter span {
           font-size: 1.2rem; } }
 
+.categories table {
+  min-width: 90rem; }
+
+.categories__link {
+  width: 27rem; }
+  .categories__link a {
+    font-family: Lato-Semibold, Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    color: #485355;
+    line-height: 4.8rem; }
+    .categories__link a:hover {
+      color: #d4bfa2; }
+
 .contact__content {
   margin-bottom: 10rem; }
 
@@ -2533,6 +2546,10 @@ body {
       color: #fff;
       background-color: #d4bfa2; }
 
+.shop-grid__listing-style .active .fa {
+  color: #fff;
+  background-color: #d4bfa2; }
+
 .shop-grid__listing-active {
   color: #fff;
   background-color: #d4bfa2; }
@@ -2640,6 +2657,75 @@ body {
             align-items: center;
     cursor: pointer; }
     .shop-grid__overlay .fa:hover {
+      color: #fff;
+      background-color: #d4bfa2; }
+
+.shop-grid__list-item {
+  border: 1px solid #e5e5e5;
+  padding: 1rem 0;
+  margin: 0; }
+  .shop-grid__list-item:hover {
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+       -moz-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(1.02);
+       -moz-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+         -o-transform: scale(1.02);
+            transform: scale(1.02); }
+
+.shop-grid__list-tittle {
+  font-family: BreakFill-Bold, Helvetica, Arial, sans-serif;
+  font-size: 2.8rem;
+  color: #485355;
+  line-height: 4rem; }
+  .shop-grid__list-tittle:hover {
+    color: #d4bfa2; }
+
+.shop-grid__list-text {
+  font-family: Lato-Regular, Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  color: #8e9c9f;
+  line-height: 2rem; }
+
+.shop-grid__list-price {
+  font-family: Lato-Light, Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  color: #485355;
+  line-height: 4.4rem; }
+
+.shop-grid__list-add {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center; }
+  .shop-grid__list-add .fa {
+    width: 4rem;
+    height: 4rem;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    font-size: 2.5rem;
+    border: 1px solid #e5e5e5;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer; }
+    .shop-grid__list-add .fa:hover {
       color: #fff;
       background-color: #d4bfa2; }
 
