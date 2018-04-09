@@ -22,6 +22,183 @@
 		}
 
 	}
+
+	&__img-big{
+		background-image: url('../../img/singleproduc1.png');
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+
+		@include respondmax(lg){
+			height: 60vh;
+		}
+	}
+
+	&__img-small {
+
+		li {
+			cursor: pointer;
+
+
+			@include respondmax(lg){
+				width: 33.333%;
+
+			}
+		}
+
+		li:not(:last-child){
+			margin-bottom: 2.5rem
+		}
+
+		li:nth-child(2) {
+			@include respondmax(lg){
+				margin: 0 2rem;
+			}
+		}
+
+		ul {
+
+			@include respondmax(lg){
+				display: flex;
+				margin-top: 2rem;
+			}
+		}
+	}
+	&__img-small-img {
+		width: 100%;
+		height: 19rem;
+
+		@include respondmax(lg) {
+			height: 15rem;
+		}
+
+		@include respondmax(md) {
+			height: 10rem;
+		}
+
+		@include respondmax(sm) {
+			height: 5rem;
+		}
+	}
+
+	&__description {
+
+
+		&-tittle {
+			@include font($bfb, 3rem, $color-dark, $lh:4.8rem);			
+		}
+
+		&-price {
+			@include font($ll, 2.2rem, $color-dark, $lh:4.8rem);
+		}
+
+		&-text {
+			margin-bottom: 4rem;
+			@include font($lr, 1.6rem, $color-dark-light, $lh:3rem);
+		}
+
+		&-kind {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 4rem;
+		}
+
+		&-color {
+			display: flex;
+			margin-bottom: 4rem;
+			flex-wrap: nowrap;
+		}
+
+		&-color__item {
+
+		}
+
+		&-color__item:not(:last-child) {
+			
+			margin-right: 1rem;
+			
+		}
+
+		&-add {
+			margin-bottom: 4rem;
+		}
+
+		&-count {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border: 1px solid $color-border;
+			border-radius: 5rem;
+			padding: .5rem 2rem;
+
+			span {
+				@include font($lr,1.4rem,$color-dark,200,3rem);
+			}
+
+			.fa{
+				font-size: 1.6rem;
+				cursor: pointer;
+			}
+		}
+
+		&-cart {
+			display: flex;
+			.fa{
+
+				width: 5rem;
+				height: 5rem;
+				border-radius: 50%;
+				font-size: 3rem;
+				border: 1px solid $color-border;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+
+				&:hover {
+					background-color: $color-primary;
+					color: #fff;
+				}
+			}
+		}
+
+		&-social {
+			margin-bottom: 2rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			p {
+				@include font($lr, 1.4rem, $color-dark-light,$lh: 24px);
+			}
+
+			.fa {
+				color: $color-dark-light;
+				font-size: 1.4rem;
+				cursor: pointer;
+
+				&:hover {
+					color: $color-primary;
+				}
+			}
+		}
+
+		&-tag {
+			display: flex;
+			flex-wrap: wrap;
+
+			a {
+				margin-right: 2rem;
+				@include font($li, 1.2rem, $color-dark-light, 50, 34px);
+			}
+
+			.fa {
+				font-size: 3rem;
+				margin-right: 2rem;
+			}
+			
+		}
+	}
 }
 
 

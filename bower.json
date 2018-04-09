@@ -17,7 +17,8 @@
   ],
   "dependencies": {
     "owl.carousel": "^2.3.3",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "normalize.css": "^8.0.0"
   },
   "devDependencies": {
     "animsition": "^4.0.2",
