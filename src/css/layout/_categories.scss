@@ -1,11 +1,64 @@
 .categories {
 
+	margin-top: 4rem;
+
 	table {
-		min-width: 90rem;
+		
+		td, th {
+			border: none;
+		}
+	}
+
+	&__tittle {
+		@include font($bfb, 2.4rem, $color-white, $lh:6rem);
+		background-color: $color-dark;
+		text-align: center;
+	}
+
+	&__pagination {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__pagination-this {
+		@include font($ll, 3.6rem, $color-dark, $lh:6rem);
+		padding-left: 2rem;
+	}
+
+	&__pagination-all {
+		@include font($lb, 1.6rem, $color-dark-light, $lh:6rem);
+
+		&:before {
+			content: "/";
+		}
+	}
+
+	&__pagination-control {
+
+		.fa {
+			width: 3rem;
+			height: 3rem;
+			border-radius: 50%;
+			border: 1px solid $color-dark-light;
+			color: $color-dark-light;
+			font-size: 2rem;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			margin-left: 1rem;
+			cursor: pointer;
+
+		}
+
+
 	}
 
 	&__link {
 		width: 27rem;
+		border: 1px solid $color-border !important;
+		padding-left: 5rem !important;
+		position: relative;
 
 		a {
 			@include font($lsb, 1.6rem, $color-dark,$lh:4.8rem);
@@ -15,4 +68,19 @@
 			}
 		}
 	}
+
+	&__btn {
+		position: absolute;
+		bottom: 3rem;
+	}
+
+	&__content {
+		padding-bottom: 0 !important;
+		padding-left: 3rem !important;
+	}
+
+	.shop-grid__grid-item {
+		padding-top: 1rem;
+	}
+
 }
