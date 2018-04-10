@@ -95,6 +95,20 @@
 <script src="libs/animsition/dist/js/animsition.min.js" type="text/javascript" charset="utf-8" async defer></script>
 <script src="libs/nouislider/distribute/nouislider.min.js" type="text/javascript" charset="utf-8" async defer></script>
 
+<script type="text/javascript" src="libs/select2/select2.min.js"></script>
+<script type="text/javascript">
+  $(".selection-1").select2({
+    minimumResultsForSearch: 20,
+    dropdownParent: $('#dropDownSelect1')
+  });
+
+  $(".selection-2").select2({
+    minimumResultsForSearch: 20,
+    dropdownParent: $('#dropDownSelect2')
+  });
+</script>
+
+
 <script src="js/vendor/plugins.js"></script>
 <script src="js/all.min.js"></script>
 
