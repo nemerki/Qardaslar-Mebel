@@ -1,14 +1,194 @@
 .index-review {
+	padding: 10rem 0;
+	background-color: #f5f8fa;
 
-background-color: #f5f8fa;
+	&__container {
+		display: flex;
+		align-items: center;
 
-&__comment {
-	width: 49%;
-	display: inline-block;
-}
+		@include respondmax(md) {
+			flex-direction: column;
+		}
 
-&__img {
-	width: 50%;
-	display: inline-block;
-}
+	}
+
+	
+
+	&__img {
+		width: 50%;
+		display: inline-block;
+
+		@include respondmax(md) {
+			width: 100%;
+			order: 1;
+			display: flex;
+			justify-content: center;
+			background-color: #fff;
+		}
+
+		img {
+			@include respondmax(md) {
+				max-height: 30rem;
+			}
+		}
+
+
+	}
+
+	&__comment {
+		width: 49%;
+		display: inline-block;
+		border: 1.5rem solid #c1c6c8;
+		border-right: none;
+		padding: 8rem 0 3rem 0;
+
+
+		@include respondmax(xl) {
+			padding: 2rem 0 1rem 0;
+		}
+
+		@include respondmax(md) {
+			border-right: 1.5rem solid #c1c6c8;
+			width: 85%;
+			order: 2;
+			border-top: none;
+		}
+
+		@include respondmax(sm) {
+			
+			width: 95%;
+			padding-bottom: 6rem;
+			
+		}
+
+
+
+		&-text {
+			@include font($bfb, 1.8rem, $color-dark, $lh:3rem);		
+
+			@include respondmax(lg) {
+				
+				font-size: 1.5rem;
+				line-height: 2.5rem;				
+			}
+		}
+
+		&-name {
+			@include font($bfb, 1.8rem, $color-dark, $lh:4.8rem);
+			@include respondmax(lg) {
+
+				line-height: 2.5rem;				
+			}
+		}
+
+		&-job {
+			@include font($bfb, 1.2rem, $color-dark-light, 400, 2.4rem);
+
+			text-transform: uppercase;
+			letter-spacing: 4px;		
+			margin-bottom: 3rem;
+			
+			@include respondmax(lg) {				
+				
+				line-height: 2rem;				
+			}
+		}
+
+		&-quot {
+			@include font($bfb, 7.2rem, $color-primary, 200, 6rem);		
+
+			@include respondmax(lg) {
+				padding-top: 2rem;
+				line-height: 2rem;
+			}
+
+
+		}
+
+		&-text, &-name, &-job, &-quot {
+			max-width: 31rem;
+			text-align: right;
+			margin-left: 5rem;
+
+			@include respondmax(xl) {
+				margin-left: 2rem !important;
+			}
+
+			@include respondmax(lg) {
+				margin-left: 0!important;
+				max-width: 25rem;
+			}
+
+			@include respondmax(sm) {
+				
+				max-width: 90%;
+			}
+		}
+
+
+		.carousel-indicators {
+			flex-direction: column;
+			padding-bottom: 3rem;
+
+			@include respondmax(xl) {
+				margin-right: 5% !important;
+			}
+
+			@include respondmax(sm) {
+				flex-direction: row;
+				position: absolute;
+				bottom: -4.5rem;
+				padding-bottom: 0;
+				margin-left: 5%;
+			}
+		}
+
+		.carousel-indicators li {
+			width: 50px;
+			height: 50px;
+			cursor: pointer;
+			border: 1px solid #ccc;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			border-radius: 50%;
+			opacity: 0.4;
+			overflow: hidden;
+			transition: all .4s ease-in;
+			vertical-align: middle;
+			margin-left: auto !important;
+			margin-top: 3rem;
+			background-position: center;
+			background-size: 100%;
+
+			@include respondmax(lg) {
+				width: 30px;
+				height: 30px;
+			}
+
+			@include respondmax(sm) {
+				margin-right: auto;
+			}
+		}
+
+		.carousel-indicators .active{
+			width: 70px;
+			height: 70px;
+			opacity: 1;
+			transition: all .2s;
+			transform: translateX(10px);
+
+			@include respondmax(lg) {
+				width: 40px;
+				height: 40px;
+				transform: translateX(5px);
+			}
+		}
+
+	}
+
+	&__img{
+		box-shadow: 0 15px 30px 0  rgba(0,0,0,0.15);
+	}
+
+
+
 }
