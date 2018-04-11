@@ -92,6 +92,10 @@
 		position: absolute;
 		top: 30%;
 		width: 100%;
+
+		@include respondmax(md) {
+			display: none;
+		}
 	}
 
 	.owl-next{

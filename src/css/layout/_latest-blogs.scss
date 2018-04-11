@@ -1,5 +1,5 @@
 .latest-blogs {
-	padding: 10rem;
+	padding: 10rem 0 10rem 0; 
 	.card {
 		margin-bottom: 2rem;
 	}
@@ -14,7 +14,7 @@
 	}
 
 	.card-text {
-		@include font($lr, 1.4rem, $color-dark-light);
+		@include font($lr, 1.4rem, $color-dark-light); 
 		margin-bottom: 2rem;
 	}
 

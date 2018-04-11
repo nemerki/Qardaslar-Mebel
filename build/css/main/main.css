@@ -583,7 +583,7 @@ body {
 .user_pic {
   width: 10rem;
   height: 10rem;
-  background-image: url("../../img/404.png");
+  background-image: url("https://s3.amazonaws.com/uifaces/faces/twitter/mantia/128.jpg");
   -moz-background-size: cover;
        background-size: cover;
   background-position: center;
@@ -857,6 +857,9 @@ body {
     position: absolute;
     top: 30%;
     width: 100%; }
+    @media (max-width: 767px) {
+      .header-carousel .owl-nav {
+        display: none; } }
   .header-carousel .owl-next {
     position: absolute;
     right: 3rem; }
@@ -2155,7 +2158,7 @@ li.sale-noti > a {
     margin-right: -3rem; }
 
 .latest-blogs {
-  padding: 10rem; }
+  padding: 10rem 0 10rem 0; }
   .latest-blogs .card {
     margin-bottom: 2rem; }
   .latest-blogs .card-body {
@@ -2417,6 +2420,9 @@ li.sale-noti > a {
     border: 1px solid #e5e5e5 !important;
     padding-left: 5rem !important;
     position: relative; }
+    @media (max-width: 575px) {
+      .categories__link {
+        width: 20rem; } }
     .categories__link a {
       font-family: Lato-Semibold, Helvetica, Arial, sans-serif;
       font-size: 1.6rem;
